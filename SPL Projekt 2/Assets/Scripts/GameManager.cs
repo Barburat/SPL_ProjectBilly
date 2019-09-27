@@ -5,5 +5,5 @@ using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
-    public string yearInput;
+    [HideInInspector] public Button selectedButton;
 }

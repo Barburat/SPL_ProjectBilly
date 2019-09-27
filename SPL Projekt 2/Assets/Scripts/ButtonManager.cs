@@ -8,10 +8,13 @@ using UnityEngine.EventSystems;
 
 public class ButtonManager : MonoBehaviour
 {
+    public GameManager gameManager;
+
+
     public void FirstInvention()
     {
         EventSystem.current.currentSelectedGameObject.GetComponent<Button>().Select();
-        
+        gameManager.selectedButton = EventSystem.current.currentSelectedGameObject.GetComponent<Button>();
     }
     public void SecondInvention()
     {
