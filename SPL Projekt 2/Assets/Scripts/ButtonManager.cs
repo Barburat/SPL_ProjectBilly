@@ -2,24 +2,29 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
+using UnityEngine.EventSystems;
 
 
 public class ButtonManager : MonoBehaviour
 {
     public void FirstInvention()
     {
-        SceneManager.LoadScene("mainMenu");
+        EventSystem.current.currentSelectedGameObject.GetComponent<Button>().Select();
+        
     }
     public void SecondInvention()
     {
-        SceneManager.LoadScene("mainMenu");
+        EventSystem.current.currentSelectedGameObject.GetComponent<Button>().Select();
     }
     public void ThirdInvention()
     {
-        SceneManager.LoadScene("mainMenu");
+        EventSystem.current.currentSelectedGameObject.GetComponent<Button>().Select();
     }
     public void FourthInvention()
     {
-        SceneManager.LoadScene("mainMenu");
+        EventSystem.current.currentSelectedGameObject.GetComponent<Button>().Select();
     }
+
+
 }

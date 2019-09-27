@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class InputManager : MonoBehaviour
+public class ButtonScript : MonoBehaviour
 {
-    GameManager game;
+    public int CorrectYear;
 }
