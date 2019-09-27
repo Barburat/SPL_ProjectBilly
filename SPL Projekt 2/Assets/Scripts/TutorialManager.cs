@@ -8,16 +8,24 @@ public class TutorialManager : MonoBehaviour
 {
     private static int messageIndex = 0;
     [SerializeField] private string[] messages = new string[] { "Hello Hello", "Ree", "Hello again" };
+    [SerializeField] private Texture[] images;
+    [SerializeField] private bool[] indexHasImage;
+
     private Text textField;
+
     [SerializeField] private GameObject btnForward;
     [SerializeField] private GameObject btnBackwards;
+    [SerializeField] private GameObject imageHolder;
 
     Button b1;
     Button b2;
 
+    RawImage img;
+
     // Start is called before the first frame update
     void Start()
     {
+
         textField = gameObject.GetComponent<Text>();
         textField.text = messages[0];
 
@@ -26,15 +34,19 @@ public class TutorialManager : MonoBehaviour
 
         b2 = btnBackwards.GetComponent<Button>();
         b2.onClick.AddListener(Backwards);
+
+        img = imageHolder.GetComponent<RawImage>();
+        img.texture = images[messageIndex];
+
     }
 
 
     public void Forward()
     {
-        if (messageIndex < messages.Length)
+        if (messageIndex < messages.Length-1)
         {
             messageIndex++;
-            ChangeMessage();
+            ChangeUI();
         }
         else
         {
@@ -45,17 +57,23 @@ public class TutorialManager : MonoBehaviour
 
     public void Backwards()
     {
-        if(messageIndex > 0)
+        if (messageIndex > 0)
         {
             messageIndex--;
-            ChangeMessage();
+            ChangeUI();
         }
 
     }
 
-    public void ChangeMessage()
+    /*Se till att det alltid finns lika många element i indexHasImage som det finns messages or errors will fuck you in the ass*/
+    public void ChangeUI()
     {
         textField.text = messages[messageIndex];
+        if (indexHasImage[messageIndex])
+            img.texture = images[messageIndex];
+
+        Debug.Log(messageIndex);
+
     }
 
 
