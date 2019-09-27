@@ -6,4 +6,6 @@ public class ButtonScript : MonoBehaviour
 {
     public int CorrectYear;
     public int SceneIndex;
+
+    public string info;
 }

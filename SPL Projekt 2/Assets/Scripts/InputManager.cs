@@ -24,4 +24,15 @@ public class InputManager : MonoBehaviour
     {
         SceneManager.LoadScene("Main");
     }
+
+    public void MainMenu()
+    {
+        SceneManager.LoadScene("mainMenu");
+    }
+
+    public void StartTutorial()
+    {
+        SceneManager.LoadScene("Tutorial");
+    }
+
 }
