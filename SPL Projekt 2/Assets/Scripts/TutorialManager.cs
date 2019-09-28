@@ -17,8 +17,10 @@ public class TutorialManager : MonoBehaviour
     [SerializeField] private GameObject btnBackwards;
     [SerializeField] private GameObject imageHolder;
 
-    Button b1;
-    Button b2;
+    private Button b1;
+    private Text b1Txt;
+    private Button b2;
+    
 
     RawImage img;
 
@@ -31,6 +33,7 @@ public class TutorialManager : MonoBehaviour
 
         b1 = btnForward.GetComponent<Button>();
         b1.onClick.AddListener(Forward);
+        b1Txt = btnForward.GetComponentInChildren<Text>();
 
         b2 = btnBackwards.GetComponent<Button>();
         b2.onClick.AddListener(Backwards);
@@ -64,6 +67,11 @@ public class TutorialManager : MonoBehaviour
     public void ChangeUI()
     {
         textField.text = messages[messageIndex];
+
+        if (messageIndex == messages.Length - 1)
+            b1Txt.text = "I'm ready Rick!";
+
+
         if (images[messageIndex] != null)
         {
             imageHolder.SetActive(true);
@@ -72,7 +80,6 @@ public class TutorialManager : MonoBehaviour
         else
             imageHolder.SetActive(false);
     }
-
 
     void changeScene()
     {
