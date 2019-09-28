@@ -14,12 +14,38 @@ public class GameManager : MonoBehaviour
     public Text MentorText;
     public InputField inputField;
 
-    private ArrayList inventions = new ArrayList();
+    public static bool telephoneAcquired = false;
+    public static bool vaccineAcquired = false;
+    public static bool steamMachineAcquired = false;
+    public static bool lightbulbAcquired = false;
 
+    private ArrayList inventions = new ArrayList();
     
 
-    void Start()
+
+
+
+    void OnLevelWasLoaded()
     {
+        if(buttons != null)
+        {
+            if (telephoneAcquired == true)
+            {
+                buttons[0].GetComponent<Button>().interactable = false;
+            }
+            if (vaccineAcquired == true)
+            {
+                buttons[1].GetComponent<Button>().interactable = false;
+            }
+            if (steamMachineAcquired == true)
+            {
+                buttons[2].GetComponent<Button>().interactable = false;
+            }
+            if (lightbulbAcquired == true)
+            {
+                buttons[3].GetComponent<Button>().interactable = false;
+            }
+        }
         
     }
 
@@ -45,7 +71,7 @@ public class GameManager : MonoBehaviour
         else if(selectedButton != null && selectedButton.GetComponent<ButtonScript>().CorrectYear == int.Parse(inputField.text))
         {
             Debug.Log("Correct input");
-            SceneManager.LoadScene("mainMenu");
+            SceneManager.LoadScene(selectedButton.GetComponent<ButtonScript>().SceneIndex);
         }
 
         /*
