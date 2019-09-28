@@ -790,7 +790,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1071421049
 RectTransform:
   m_ObjectHideFlags: 0
@@ -933,7 +933,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9364af8a66c176f48af7e5bc8947904b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GoBackButton: {fileID: 0}
+  GoBackButton: {fileID: 1071421048}
+  InventorTalk: {fileID: 1721601864}
 --- !u!4 &1120822360
 Transform:
   m_ObjectHideFlags: 0
@@ -1298,6 +1299,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d294dcfd7e625874aad182988fa7dbe5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameManager: {fileID: 0}
 --- !u!4 &1465982185
 Transform:
   m_ObjectHideFlags: 0

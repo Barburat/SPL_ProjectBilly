@@ -14,12 +14,22 @@ public class GameManager : MonoBehaviour
     public Text MentorText;
     public InputField inputField;
 
+    private ArrayList inventions = new ArrayList();
+
     
 
     void Start()
     {
-
+        
     }
+
+    public void AddInvention(string name)
+    {
+        inventions.Add(name);
+        Debug.Log("new item added");
+    }
+
+
 
     public void StartTimeMachine()
     {
