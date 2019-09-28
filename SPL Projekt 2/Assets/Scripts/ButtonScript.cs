@@ -8,6 +8,7 @@ public class ButtonScript : MonoBehaviour
     public GameManager gameManager;
     public int CorrectYear;
     public int SceneIndex;
+    public string InfoText;
     
     void Start()
     {
@@ -20,5 +21,6 @@ public class ButtonScript : MonoBehaviour
         gameObject.GetComponent<Button>().Select();
         Debug.Log("Clicked " + gameObject.name);
         Debug.Log("Year: " + CorrectYear + " Scene Index: " + SceneIndex);
+        gameManager.MentorText.text = InfoText;
     }
 }

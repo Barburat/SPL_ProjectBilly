@@ -11,13 +11,11 @@ public class GameManager : MonoBehaviour
     public GameObject inputManager;
     public GameObject[] buttons;
     public GameObject selectedButton;
+    public Text MentorText;
 
     void Start()
     {
-        if(selectedButton == null)
-        {
-            Debug.Log("null");
-        }
+        
     }
 
     public void StartTimeMachine(int year)

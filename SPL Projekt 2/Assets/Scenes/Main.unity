@@ -150,12 +150,12 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 648652721}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 300, y: 450}
+  m_AnchoredPosition: {x: 0, y: -17.5}
+  m_SizeDelta: {x: 238.3, y: 392}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!114 &38747189
 MonoBehaviour:
@@ -184,25 +184,13 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 10
     m_MaxSize: 40
-    m_Alignment: 0
+    m_Alignment: 1
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: efshj f kuewhfyrgf zjyrfgzs hfegzjs gfyzsefshj f kuewhfyrgf zjyrfgzs hfegzjs
-    gfyzsefshj f kuewhfyrgf zjyrfgzs hfegzjs gfyzsefshj f kuewhfyrgf zjyrfgzs hfegzjs
-    gfyzsefshj f kuewhfyrgf zjyrfgzs hfegzjs gfyzsefshj f kuewhfyrgf zjyrfgzs hfegzjs
-    gfyzsefshj f kuewhfyrgf zjyrfgzs hfegzjs gfyzsefshj f kuewhfyrgf zjyrfgzs hfegzjs
-    gfyzsefshj f kuewhfyrgf zjyrfgzs hfegzjs gfyzsefshj f kuewhfyrgf zjyrfgzs hfegzjs
-    gfyzsefshj f kuewhfyrgf zjyrfgzs hfegzjs gfyzsefshj f kuewhfyrgf zjyrfgzs hfegzjs
-    gfyzsefshj f kuewhfyrgf zjyrfgzs hfegzjs gfyzsefshj f kuewhfyrgf zjyrfgzs hfegzjs
-    gfyzsefshj f kuewhfyrgf zjyrfgzs hfegzjs gfyzsefshj f kuewhfyrgf zjyrfgzs hfegzjs
-    gfyzsefshj f kuewhfyrgf zjyrfgzs hfegzjs gfyzsefshj f kuewhfyrgf zjyrfgzs hfegzjs
-    gfyzsefshj f kuewhfyrgf zjyrfgzs hfegzjs gfyzsefshj f kuewhfyrgf zjyrfgzs hfegzjs
-    gfyzsefshj f kuewhfyrgf zjyrfgzs hfegzjs gfyzsefshj f kuewhfyrgf zjyrfgzs hfegzjs
-    gfyzsefshj f kuewhfyrgf zjyrfgzs hfegzjs gfyzsefshj f kuewhfyrgf zjyrfgzs hfegzjs
-    gfyzs
+  m_Text: Hello Billy. Choose an invention.
 --- !u!222 &38747190
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -441,12 +429,11 @@ RectTransform:
   m_Children:
   - {fileID: 1214983076}
   - {fileID: 742411438}
-  - {fileID: 1007882964}
+  - {fileID: 659493686}
   - {fileID: 1653863414}
   - {fileID: 1937913075}
   - {fileID: 799749147}
   - {fileID: 1097333939}
-  - {fileID: 659493686}
   - {fileID: 38747188}
   m_Father: {fileID: 0}
   m_RootOrder: 2
@@ -488,7 +475,7 @@ RectTransform:
   - {fileID: 880847593}
   - {fileID: 422180587}
   m_Father: {fileID: 648652721}
-  m_RootOrder: 7
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
@@ -1002,85 +989,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1007882963
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1007882964}
-  - component: {fileID: 1007882966}
-  - component: {fileID: 1007882965}
-  m_Layer: 5
-  m_Name: Text
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1007882964
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1007882963}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 648652721}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 5, y: 114}
-  m_SizeDelta: {x: 260, y: 121.2}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1007882965
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1007882963}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
-    m_FontStyle: 0
-    m_BestFit: 0
-    m_MinSize: 10
-    m_MaxSize: 40
-    m_Alignment: 1
-    m_AlignByGeometry: 0
-    m_RichText: 1
-    m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
-    m_LineSpacing: 1
-  m_Text: 'New '
---- !u!222 &1007882966
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1007882963}
-  m_CullTransparentMesh: 0
 --- !u!1 &1090391368
 GameObject:
   m_ObjectHideFlags: 0
@@ -1303,6 +1211,30 @@ PrefabInstance:
       propertyPath: CorrectYear
       value: 1200
       objectReference: {fileID: 0}
+    - target: {fileID: 6254237382629347976, guid: 4085901397f7cfb41bd523ef43552a48,
+        type: 3}
+      propertyPath: InfoText
+      value: What the fuck did you just fucking say about me, you little bitch? I'll
+        have you know I graduated top of my class in the Navy Seals, and I've been
+        involved in numerous secret raids on Al-Quaeda, and I have over 300 confirmed
+        kills. I am trained in gorilla warfare and I'm the top sniper in the entire
+        US armed forces. You are nothing to me but just another target. I will wipe
+        you the fuck out with precision the likes of which has never been seen before
+        on this Earth, mark my fucking words. You think you can get away with saying
+        that shit to me over the Internet? Think again, fucker. As we speak I am contacting
+        my secret network of spies across the USA and your IP is being traced right
+        now so you better prepare for the storm, maggot. The storm that wipes out
+        the pathetic little thing you call your life. You're fucking dead, kid. I
+        can be anywhere, anytime, and I can kill you in over seven hundred ways, and
+        that's just with my bare hands. Not only am I extensively trained in unarmed
+        combat, but I have access to the entire arsenal of the United States Marine
+        Corps and I will use it to its full extent to wipe your miserable ass off
+        the face of the continent, you little shit. If only you could have known what
+        unholy retribution your little "clever" comment was about to bring down upon
+        you, maybe you would have held your fucking tongue. But you couldn't, you
+        didn't, and now you're paying the price, you goddamn idiot. I will shit fury
+        all over you and you will drown in it. You're fucking dead, kiddo.
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4085901397f7cfb41bd523ef43552a48, type: 3}
 --- !u!1 &1138496674
@@ -1355,6 +1287,7 @@ MonoBehaviour:
   - {fileID: 434986581}
   - {fileID: 2119532496}
   selectedButton: {fileID: 0}
+  MentorText: {fileID: 38747189}
 --- !u!1 &1151781648
 GameObject:
   m_ObjectHideFlags: 0
@@ -1686,6 +1619,20 @@ PrefabInstance:
       propertyPath: CorrectYear
       value: 1300
       objectReference: {fileID: 0}
+    - target: {fileID: 6254237382629347976, guid: 4085901397f7cfb41bd523ef43552a48,
+        type: 3}
+      propertyPath: InfoText
+      value: Somebody once told me the world is gonna roll me I ain't the sharpest
+        tool in the shed She was looking kind of dumb with her finger and her thumb
+        In the shape of an "L" on her forehead Well the years start coming and they
+        don't stop coming Fed to the rules and I hit the ground running Didn't make
+        sense not to live for fun Your brain gets smart but your head gets dumb So
+        much to do, so much to see So what's wrong with taking the back streets? You'll
+        never know if you don't go You'll never shine if you don't glow Hey now, you're
+        an all-star, get your game on, go play Hey now, you're a rock star, get the
+        show on, get paid And all that glitters is gold Only shooting stars break
+        the mold
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4085901397f7cfb41bd523ef43552a48, type: 3}
 --- !u!1 &1539332132
@@ -1909,6 +1856,20 @@ PrefabInstance:
         type: 3}
       propertyPath: CorrectYear
       value: 1700
+      objectReference: {fileID: 0}
+    - target: {fileID: 6254237382629347976, guid: 4085901397f7cfb41bd523ef43552a48,
+        type: 3}
+      propertyPath: InfoText
+      value: According to all known laws of aviation,     there is no way a bee should
+        be able to fly.     Its wings are too small to get its fat little body off
+        the ground.     The bee, of course, flies anyway     because bees don't care
+        what humans think is impossible.     Yellow, black. Yellow, black. Yellow,
+        black. Yellow, black.     Ooh, black and yellow! Let's shake it up a little.     Barry!
+        Breakfast is ready!     Ooming!     Hang on a second.     Hello?     - Barry?
+        - Adam?     - Oan you believe this is happening? - I can't. I'll pick you
+        up.     Looking sharp.     Use the stairs. Your father paid good money for
+        those.     Sorry. I'm excited.     Here's the graduate. We're very proud of
+        you, son.     A perfect report card, all B's.
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4085901397f7cfb41bd523ef43552a48, type: 3}
@@ -2263,5 +2224,23 @@ PrefabInstance:
       propertyPath: gameManager
       value: 
       objectReference: {fileID: 1138496676}
+    - target: {fileID: 6254237382629347976, guid: 4085901397f7cfb41bd523ef43552a48,
+        type: 3}
+      propertyPath: InfoText
+      value: In 1761 Ebenezer Kinnersley demonstrated heating a wire to incandescence.[9]  In
+        1802, Humphry Davy used what he described as "a battery of immense size",[10]
+        consisting of 2,000 cells housed in the basement of the Royal Institution
+        of Great Britain,[11] to create an incandescent light by passing the current
+        through a thin strip of platinum, chosen because the metal had an extremely
+        high melting point. It was not bright enough nor did it last long enough to
+        be practical, but it was the precedent behind the efforts of scores of experimenters
+        over the next 75 years.[12]  Over the first three-quarters of the 19th century,
+        many experimenters worked with various combinations of platinum or iridium
+        wires, carbon rods, and evacuated or semi-evacuated enclosures. Many of these
+        devices were demonstrated and some were patented.[13]  In 1835, James Bowman
+        Lindsay demonstrated a constant electric light at a public meeting in Dundee,
+        Scotland. He stated that he could "read a book at a distance of one and a
+        half feet". However he did not develop the electric light any further
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4085901397f7cfb41bd523ef43552a48, type: 3}
