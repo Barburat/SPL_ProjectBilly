@@ -46,12 +46,8 @@ public class TutorialManager : MonoBehaviour
         {
             messageIndex++;
             ChangeUI();
-        }
-        else
-        {
-            //changeScene();
-        }
-
+        }else
+            changeScene();
     }
 
     public void Backwards()
@@ -80,8 +76,7 @@ public class TutorialManager : MonoBehaviour
 
     void changeScene()
     {
-        SceneManager.LoadScene(0);
-        //remove listeners
+        SceneManager.LoadScene("Main");
     }
 
 }
