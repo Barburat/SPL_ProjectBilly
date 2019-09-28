@@ -9,7 +9,7 @@ public class TutorialManager : MonoBehaviour
     private static int messageIndex = 0;
     [SerializeField] private string[] messages = new string[] { "Hello Hello", "Ree", "Hello again" };
     [SerializeField] private Texture[] images;
-    [SerializeField] private bool[] indexHasImage;
+
 
     private Text textField;
 
@@ -37,7 +37,6 @@ public class TutorialManager : MonoBehaviour
 
         img = imageHolder.GetComponent<RawImage>();
         ChangeUI();
-
     }
 
 
@@ -69,7 +68,7 @@ public class TutorialManager : MonoBehaviour
     public void ChangeUI()
     {
         textField.text = messages[messageIndex];
-        if (indexHasImage[messageIndex])
+        if (images[messageIndex] != null)
         {
             imageHolder.SetActive(true);
             img.texture = images[messageIndex];

@@ -203,10 +203,22 @@ MonoBehaviour:
   - "Prof: Timmy, are you ready to fix the timeline \u2013 and by doing so, saving
     the world?"
   images:
-  - {fileID: 2800000, guid: 998199f249643664db5a201c154e0175, type: 3}
-  - {fileID: 2800000, guid: 0a12424334d63764c86968b6e4f97aed, type: 3}
+  - {fileID: 0}
+  - {fileID: 0}
   - {fileID: 2800000, guid: 7f0a341778aefa8478a061377cd1c321, type: 3}
-  indexHasImage: 01010100000000000000000000000000
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   btnForward: {fileID: 1176071083}
   btnBackwards: {fileID: 1234273679}
   imageHolder: {fileID: 826125793}
@@ -653,7 +665,7 @@ GameObject:
   - component: {fileID: 1176071086}
   - component: {fileID: 1176071085}
   m_Layer: 5
-  m_Name: Button
+  m_Name: Forward
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -729,9 +741,9 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_NormalColor: {r: 0.8301887, g: 0.30603063, b: 0, a: 1}
+    m_HighlightedColor: {r: 0.83137256, g: 0.30588236, b: 0, a: 1}
+    m_PressedColor: {r: 0.21176471, g: 0.98039216, b: 0, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
@@ -834,7 +846,7 @@ GameObject:
   - component: {fileID: 1234273682}
   - component: {fileID: 1234273681}
   m_Layer: 5
-  m_Name: Button (1)
+  m_Name: Back
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -880,9 +892,9 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_NormalColor: {r: 0.83137256, g: 0.30588236, b: 0, a: 1}
+    m_HighlightedColor: {r: 0.83137256, g: 0.30588236, b: 0, a: 1}
+    m_PressedColor: {r: 0.98039216, g: 0, b: 0, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
