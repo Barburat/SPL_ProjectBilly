@@ -6,18 +6,20 @@ using UnityEngine.UI;
 
 public class TelephoneSceneManager : MonoBehaviour
 {
-
+    
     public GameObject GoBackButton;
     public GameObject ContinueButton;
     public Text InventorTalk;
     public GameObject QuestionPanel;
     public string[] Dialogue;
     private int currentDialogue;
+    private GameManager gameManager;
 
 
     // Start is called before the first frame update
     void Start()
     {
+        gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
         GoBackButton.SetActive(false);
         QuestionPanel.gameObject.SetActive(false);
         if (Dialogue != null)
@@ -52,7 +54,8 @@ public class TelephoneSceneManager : MonoBehaviour
     {
         // print last comment from inventor, add button to go home. 
         InventorTalk.text = "You seem to know your shit. Here you go. ";
-        GameObject.Find("GameManager").GetComponent<GameManager>().AddInvention("Telephone");
+        gameManager.AddInvention("Telephone");
+        GameManager.telephoneAcquired = true;
         GoBackButton.SetActive(true);
         QuestionPanel.SetActive(false);
 
