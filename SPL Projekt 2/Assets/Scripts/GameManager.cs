@@ -12,6 +12,7 @@ public class GameManager : MonoBehaviour
     public GameObject[] buttons;
     public GameObject selectedButton;
     public Text MentorText;
+    public InputField inputField;
 
     void Start()
     {
