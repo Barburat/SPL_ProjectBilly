@@ -7,7 +7,6 @@ using UnityEngine.UI;
 public class TelephoneSceneManager : MonoBehaviour
 {
 
-    int chances = 1; // vi kan skriva ut frågor tills chanses är slut (om spelaren svarar fel), sen kastas spelaren tbx när chanses är  0 och svaret är fel.
     public GameObject GoBackButton;
     public Text InventorTalk;
     
@@ -34,16 +33,8 @@ public class TelephoneSceneManager : MonoBehaviour
 
     public void WrongAnswer()
     {
-        if(chances == 0)
-        {
-            // inventor kicks you out
-        }
-        else
-        {
-            chances--;
-            // print new question. And dissapointed comemnt from inventor
-            
-        }
+        InventorTalk.text = "Bah! Do you really think i would give away my precious to an uneducated scoundrel like yourself? Get out of my sight!";
+        GoBackButton.SetActive(true);
     }
 
 
