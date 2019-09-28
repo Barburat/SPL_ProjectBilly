@@ -219,9 +219,11 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  IncludeTimmyAt: 010000000300000006000000
   btnForward: {fileID: 1176071083}
   btnBackwards: {fileID: 1234273679}
   imageHolder: {fileID: 826125793}
+  TimmyHolder: {fileID: 236384800}
 --- !u!114 &147684113
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -245,7 +247,7 @@ MonoBehaviour:
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 18
-    m_FontStyle: 1
+    m_FontStyle: 2
     m_BestFit: 1
     m_MinSize: 12
     m_MaxSize: 18
@@ -276,7 +278,7 @@ GameObject:
   - component: {fileID: 234292239}
   - component: {fileID: 234292238}
   m_Layer: 5
-  m_Name: RawImage
+  m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -321,7 +323,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Texture: {fileID: 2800000, guid: e0a7d437acd599745b6b1f589c490b94, type: 3}
+  m_Texture: {fileID: 2800000, guid: 8905678d3298cef4ebbc95dea39466eb, type: 3}
   m_UVRect:
     serializedVersion: 2
     x: 0
@@ -353,7 +355,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &236384801
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1265,7 +1267,7 @@ GameObject:
   - component: {fileID: 1898725347}
   - component: {fileID: 1898725346}
   m_Layer: 5
-  m_Name: RawImage (1)
+  m_Name: Board
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
