@@ -29,25 +29,30 @@ public class BookScript : MonoBehaviour
 
     public void NextEntry()
     {
+        
         if (bookIndex == 4)
         {
-            bookIndex = 0;
+            return;
+            //bookIndex = 0;
         }
         bookIndex++;
         textfield.text = Entries[bookIndex];
         showImage(bookIndex);
-
+        
     }
 
     public void PreviousEntry()
     {
-        if(bookIndex == 0)
+        
+        if (bookIndex == 0)
         {
-            bookIndex = 5;
+            return;
+            //bookIndex = 5;
         }
         bookIndex--;
         textfield.text = Entries[bookIndex];
         showImage(bookIndex);
+        
     }
 
     private void showImage(int index)
