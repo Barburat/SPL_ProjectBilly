@@ -199,6 +199,63 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 38747187}
   m_CullTransparentMesh: 0
+--- !u!1 &188849069
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 188849071}
+  - component: {fileID: 188849070}
+  m_Layer: 0
+  m_Name: book
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &188849070
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 188849069}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc339ee45946d1947b320d47925ffdf5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Entries:
+  - rzfse
+  - fdr4g<ed
+  - yh<zg
+  - r5sfnyt
+  - dr
+  pics:
+  - {fileID: 2800000, guid: 0a12424334d63764c86968b6e4f97aed, type: 3}
+  - {fileID: 2800000, guid: 8905678d3298cef4ebbc95dea39466eb, type: 3}
+  - {fileID: 2800000, guid: e7edc6602eeb1a140bb7ba66445275c7, type: 3}
+  - {fileID: 2800000, guid: c6f5130d590ed2b4f995fa41570547f8, type: 3}
+  - {fileID: 2800000, guid: 7f0a341778aefa8478a061377cd1c321, type: 3}
+  textfield: {fileID: 271137399}
+  imagefield: {fileID: 237006944}
+--- !u!4 &188849071
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 188849069}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 662.16614, y: 339.3763, z: -2255.8262}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &237006942
 GameObject:
   m_ObjectHideFlags: 0
@@ -568,7 +625,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 330853711}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 188849070}
+        m_MethodName: NextEntry
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &330853711
@@ -2529,7 +2597,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1614511735}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 188849070}
+        m_MethodName: PreviousEntry
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1614511735
