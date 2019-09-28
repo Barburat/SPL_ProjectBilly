@@ -8,7 +8,7 @@ using UnityEngine.SceneManagement;
 
 public class InputManager : MonoBehaviour
 {
-
+    public GameObject BookPanel;
     public GameManager gameManager;
 
     // Start is called before the first frame update
@@ -44,5 +44,17 @@ public class InputManager : MonoBehaviour
         gameManager.StartTimeMachine();
     }
    
+
+    public void OpenBook()
+    {
+        BookPanel.SetActive(true);
+    }
+
+    public void CloseBook()
+    {
+        BookPanel.SetActive(false);
+    }
+
+
 
 }
