@@ -36,7 +36,7 @@ public class TutorialManager : MonoBehaviour
         b2.onClick.AddListener(Backwards);
 
         img = imageHolder.GetComponent<RawImage>();
-        img.texture = images[messageIndex];
+        ChangeUI();
 
     }
 
