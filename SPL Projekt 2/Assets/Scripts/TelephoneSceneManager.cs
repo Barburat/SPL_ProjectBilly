@@ -8,14 +8,22 @@ public class TelephoneSceneManager : MonoBehaviour
 {
 
     public GameObject GoBackButton;
+    public GameObject ContinueButton;
     public Text InventorTalk;
     public GameObject QuestionPanel;
-    
+    public string[] Dialogue;
+    private int currentDialogue;
+
 
     // Start is called before the first frame update
     void Start()
     {
         GoBackButton.SetActive(false);
+        QuestionPanel.gameObject.SetActive(false);
+        if (Dialogue != null)
+        {
+            InventorTalk.text = Dialogue[0];
+        }
     }
 
     // Update is called once per frame
@@ -23,6 +31,22 @@ public class TelephoneSceneManager : MonoBehaviour
     {
         
     }
+
+    public void Continue()
+    {
+
+        if (currentDialogue == Dialogue.Length - 1)
+        {
+            ContinueButton.SetActive(false);
+            QuestionPanel.gameObject.SetActive(true);
+        }
+        else
+        {
+            currentDialogue++;
+            InventorTalk.text = Dialogue[currentDialogue];
+        }
+    }
+
 
     public void RightAnswer()
     {
