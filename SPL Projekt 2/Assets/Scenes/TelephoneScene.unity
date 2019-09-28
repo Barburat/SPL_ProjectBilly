@@ -361,7 +361,7 @@ GameObject:
   - component: {fileID: 742188791}
   - component: {fileID: 742188790}
   m_Layer: 5
-  m_Name: Panel
+  m_Name: QuestionPanel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -808,7 +808,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -110, y: 40}
+  m_AnchoredPosition: {x: -808, y: 96}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 1, y: 0}
 --- !u!114 &1071421050
@@ -935,6 +935,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   GoBackButton: {fileID: 1071421048}
   InventorTalk: {fileID: 1721601864}
+  QuestionPanel: {fileID: 742188788}
 --- !u!4 &1120822360
 Transform:
   m_ObjectHideFlags: 0

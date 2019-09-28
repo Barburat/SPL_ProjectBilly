@@ -9,6 +9,7 @@ public class TelephoneSceneManager : MonoBehaviour
 
     public GameObject GoBackButton;
     public Text InventorTalk;
+    public GameObject QuestionPanel;
     
 
     // Start is called before the first frame update
@@ -29,12 +30,15 @@ public class TelephoneSceneManager : MonoBehaviour
         InventorTalk.text = "You seem to know your shit. Here you go. ";
         GameObject.Find("GameManager").GetComponent<GameManager>().AddInvention("Telephone");
         GoBackButton.SetActive(true);
+        QuestionPanel.SetActive(false);
+
     }
 
     public void WrongAnswer()
     {
         InventorTalk.text = "Bah! Do you really think i would give away my precious to an uneducated scoundrel like yourself? Get out of my sight!";
         GoBackButton.SetActive(true);
+        QuestionPanel.SetActive(false);
     }
 
 
