@@ -70,7 +70,12 @@ public class TutorialManager : MonoBehaviour
     {
         textField.text = messages[messageIndex];
         if (indexHasImage[messageIndex])
+        {
+            imageHolder.SetActive(true);
             img.texture = images[messageIndex];
+        }
+        else
+            imageHolder.SetActive(false);
     }
 
 
