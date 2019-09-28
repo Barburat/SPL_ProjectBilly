@@ -35,4 +35,8 @@ public class InputManager : MonoBehaviour
         SceneManager.LoadScene("Tutorial");
     }
 
+
+
+   
+
 }
