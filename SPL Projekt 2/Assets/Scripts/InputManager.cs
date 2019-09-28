@@ -8,6 +8,9 @@ using UnityEngine.SceneManagement;
 
 public class InputManager : MonoBehaviour
 {
+
+    public GameManager gameManager;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -36,7 +39,10 @@ public class InputManager : MonoBehaviour
     }
 
 
-
+    public void SubmitInput()
+    {
+        gameManager.StartTimeMachine();
+    }
    
 
 }

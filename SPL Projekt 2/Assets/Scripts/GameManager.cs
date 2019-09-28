@@ -14,16 +14,28 @@ public class GameManager : MonoBehaviour
     public Text MentorText;
     public InputField inputField;
 
+    
+
     void Start()
     {
-        
+
     }
 
-    public void StartTimeMachine(int year)
+    public void StartTimeMachine()
     {
-        if(selectedButton != null && selectedButton.GetComponent<ButtonScript>().CorrectYear == year)
+        if(selectedButton == null)
         {
-            SceneManager.LoadScene("Tutorial");
+            MentorText.text = "You need to select an invention first Billy!";
+        }
+        else if(inputField.text == "")
+        {
+            MentorText.text = "You need to select the year Billy!";
+        }
+
+        else if(selectedButton != null && selectedButton.GetComponent<ButtonScript>().CorrectYear == int.Parse(inputField.text))
+        {
+            Debug.Log("Correct input");
+            SceneManager.LoadScene("mainMenu");
         }
 
         /*
@@ -32,13 +44,9 @@ public class GameManager : MonoBehaviour
             SceneManager.LoadScene(selectedButton.GetComponent<ButtonScript>().SceneIndex);
         }
         */
-        if(year == 0) // MOTHERLOAD
+        else if (int.Parse(inputField.text) == 0) // MOTHERLOAD
         {
             inputManager.GetComponent<InputManager>().StartTutorial();
-        }
-        else
-        {
-            SceneManager.LoadScene("WrongYear");
         }
     }
 }
