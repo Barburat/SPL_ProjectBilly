@@ -77,6 +77,8 @@ public class TutorialManager : MonoBehaviour
 
         if (messageIndex == messages.Length - 1)
             b1Txt.text = "I'm ready Rick!";
+        else
+            b1Txt.text = "Okay, I understand";
 
 
         if (images[messageIndex] != null)

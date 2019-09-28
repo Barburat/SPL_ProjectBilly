@@ -156,7 +156,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 4.2699966}
-  m_SizeDelta: {x: 400, y: 66.9}
+  m_SizeDelta: {x: 400, y: 110.02}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &147684112
 MonoBehaviour:
@@ -179,7 +179,7 @@ MonoBehaviour:
     could be end of civilization as we know it! '
   - 'Timmy: But professor! What can we do to fix it?'
   - 'Prof: We must use time machine to go back and retrieve these inventions from
-    the past. If we get a hold of every single one, the timeline should return to
+    the past. If we can bring back every single one, the timeline should return to
     normal.'
   - 'Prof: The problem is that only one of us can go back - and I must remain here
     to oversee the machine. You will have to retrieve these inventions on your own. '
@@ -188,7 +188,7 @@ MonoBehaviour:
   - 'Prof: Time is of the essence Timmy! You see these icons? They represent the time
     you have left, until the timeline is distorted beyond repair.'
   - 'Prof: You must recover all the inventions before they run out. Each time you
-    go travel, one will be lost, so you must make the most out of every attempt. '
+    travel, one will be lost, so you must make the most out of every attempt. '
   - 'Prof: To go back in time, you select the invention you wish to retrieve by clicking
     on it. '
   - 'Prof: Once you''ve done that, you''ll have to enter the correct century on the
@@ -249,14 +249,14 @@ MonoBehaviour:
     m_FontSize: 18
     m_FontStyle: 2
     m_BestFit: 1
-    m_MinSize: 12
+    m_MinSize: 14
     m_MaxSize: 18
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
-    m_LineSpacing: 1
+    m_LineSpacing: 1.5
   m_Text: 
 --- !u!222 &147684114
 CanvasRenderer:
