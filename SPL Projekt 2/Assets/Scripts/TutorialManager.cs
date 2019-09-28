@@ -44,7 +44,6 @@ public class TutorialManager : MonoBehaviour
 
     }
 
-
     public void Forward()
     {
         if (messageIndex < messages.Length - 1)
@@ -52,7 +51,7 @@ public class TutorialManager : MonoBehaviour
             messageIndex++;
             ChangeUI();
         }else
-            changeScene();
+            ChangeScene();
     }
 
     public void Backwards()
@@ -89,7 +88,7 @@ public class TutorialManager : MonoBehaviour
             imageHolder.SetActive(false);
     }
 
-    void changeScene()
+    void ChangeScene()
     {
         SceneManager.LoadScene("Main");
     }
