@@ -10,12 +10,22 @@ public class GameManager : MonoBehaviour
 {
     public GameObject inputManager;
     public GameObject[] buttons;
-    [HideInInspector] public Button selectedButton;
+    public GameObject selectedButton;
 
+    void Start()
+    {
+        if(selectedButton == null)
+        {
+            Debug.Log("null");
+        }
+    }
 
     public void StartTimeMachine(int year)
     {
-
+        if(selectedButton != null && selectedButton.GetComponent<ButtonScript>().CorrectYear == year)
+        {
+            SceneManager.LoadScene("Tutorial");
+        }
 
         /*
         if(selectedButton.GetComponent<ButtonScript>().CorrectYear == year)

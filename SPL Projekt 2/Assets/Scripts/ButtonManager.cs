@@ -20,7 +20,7 @@ public class ButtonManager : MonoBehaviour
         
     }
 
-
+    /*
     public void FirstInvention()
     {
         EventSystem.current.currentSelectedGameObject.GetComponent<Button>().Select();
@@ -42,5 +42,5 @@ public class ButtonManager : MonoBehaviour
         gameManager.selectedButton = EventSystem.current.currentSelectedGameObject.GetComponent<Button>();
     }
 
-
+    */
 }
