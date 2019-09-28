@@ -9,6 +9,12 @@ public class ButtonScript : MonoBehaviour
     public int CorrectYear;
     public int SceneIndex;
     public string InfoText;
+    public string[] mentorTips;
+
+    public static int phoneAttempts;
+    public static int vaccineAttempts;
+    public static int steamAttempts;
+    public static int lightAttempts;
     
     void Start()
     {

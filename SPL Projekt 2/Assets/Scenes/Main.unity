@@ -1803,16 +1803,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Invention4
       objectReference: {fileID: 0}
-    - target: {fileID: 6254237382629347973, guid: 4085901397f7cfb41bd523ef43552a48,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 6254237382629347973, guid: 4085901397f7cfb41bd523ef43552a48,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: FourthInvention
-      objectReference: {fileID: 0}
     - target: {fileID: 6254237382629347972, guid: 4085901397f7cfb41bd523ef43552a48,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1918,6 +1908,21 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 6254237382629347973, guid: 4085901397f7cfb41bd523ef43552a48,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6254237382629347973, guid: 4085901397f7cfb41bd523ef43552a48,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: FourthInvention
+      objectReference: {fileID: 0}
+    - target: {fileID: 6254237382629347976, guid: 4085901397f7cfb41bd523ef43552a48,
+        type: 3}
+      propertyPath: mentorTips.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6254237382629347976, guid: 4085901397f7cfb41bd523ef43552a48,
         type: 3}
       propertyPath: gameManager
@@ -1951,6 +1956,16 @@ PrefabInstance:
         you, maybe you would have held your fucking tongue. But you couldn't, you
         didn't, and now you're paying the price, you goddamn idiot. I will shit fury
         all over you and you will drown in it. You're fucking dead, kiddo.
+      objectReference: {fileID: 0}
+    - target: {fileID: 6254237382629347976, guid: 4085901397f7cfb41bd523ef43552a48,
+        type: 3}
+      propertyPath: SceneIndex
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6254237382629347976, guid: 4085901397f7cfb41bd523ef43552a48,
+        type: 3}
+      propertyPath: mentorTips.Array.data[0]
+      value: no
       objectReference: {fileID: 0}
     - target: {fileID: 6254237382544746840, guid: 4085901397f7cfb41bd523ef43552a48,
         type: 3}
@@ -2219,16 +2234,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Invention3
       objectReference: {fileID: 0}
-    - target: {fileID: 6254237382629347973, guid: 4085901397f7cfb41bd523ef43552a48,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 6254237382629347973, guid: 4085901397f7cfb41bd523ef43552a48,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: ThirdInvention
-      objectReference: {fileID: 0}
     - target: {fileID: 6254237382629347972, guid: 4085901397f7cfb41bd523ef43552a48,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2334,6 +2339,21 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 6254237382629347973, guid: 4085901397f7cfb41bd523ef43552a48,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6254237382629347973, guid: 4085901397f7cfb41bd523ef43552a48,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ThirdInvention
+      objectReference: {fileID: 0}
+    - target: {fileID: 6254237382629347976, guid: 4085901397f7cfb41bd523ef43552a48,
+        type: 3}
+      propertyPath: mentorTips.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6254237382629347976, guid: 4085901397f7cfb41bd523ef43552a48,
         type: 3}
       propertyPath: gameManager
@@ -2357,6 +2377,16 @@ PrefabInstance:
         an all-star, get your game on, go play Hey now, you're a rock star, get the
         show on, get paid And all that glitters is gold Only shooting stars break
         the mold
+      objectReference: {fileID: 0}
+    - target: {fileID: 6254237382629347976, guid: 4085901397f7cfb41bd523ef43552a48,
+        type: 3}
+      propertyPath: SceneIndex
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6254237382629347976, guid: 4085901397f7cfb41bd523ef43552a48,
+        type: 3}
+      propertyPath: mentorTips.Array.data[0]
+      value: no
       objectReference: {fileID: 0}
     - target: {fileID: 6254237382544746840, guid: 4085901397f7cfb41bd523ef43552a48,
         type: 3}
@@ -2666,16 +2696,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Invention2
       objectReference: {fileID: 0}
-    - target: {fileID: 6254237382629347973, guid: 4085901397f7cfb41bd523ef43552a48,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 6254237382629347973, guid: 4085901397f7cfb41bd523ef43552a48,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: SecondInvention
-      objectReference: {fileID: 0}
     - target: {fileID: 6254237382629347972, guid: 4085901397f7cfb41bd523ef43552a48,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2781,6 +2801,21 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 6254237382629347973, guid: 4085901397f7cfb41bd523ef43552a48,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6254237382629347973, guid: 4085901397f7cfb41bd523ef43552a48,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SecondInvention
+      objectReference: {fileID: 0}
+    - target: {fileID: 6254237382629347976, guid: 4085901397f7cfb41bd523ef43552a48,
+        type: 3}
+      propertyPath: mentorTips.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6254237382629347976, guid: 4085901397f7cfb41bd523ef43552a48,
         type: 3}
       propertyPath: gameManager
@@ -2804,6 +2839,16 @@ PrefabInstance:
         up.     Looking sharp.     Use the stairs. Your father paid good money for
         those.     Sorry. I'm excited.     Here's the graduate. We're very proud of
         you, son.     A perfect report card, all B's.
+      objectReference: {fileID: 0}
+    - target: {fileID: 6254237382629347976, guid: 4085901397f7cfb41bd523ef43552a48,
+        type: 3}
+      propertyPath: SceneIndex
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6254237382629347976, guid: 4085901397f7cfb41bd523ef43552a48,
+        type: 3}
+      propertyPath: mentorTips.Array.data[0]
+      value: no
       objectReference: {fileID: 0}
     - target: {fileID: 6254237382544746840, guid: 4085901397f7cfb41bd523ef43552a48,
         type: 3}
@@ -3349,16 +3394,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Invention1
       objectReference: {fileID: 0}
-    - target: {fileID: 6254237382629347973, guid: 4085901397f7cfb41bd523ef43552a48,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 6254237382629347973, guid: 4085901397f7cfb41bd523ef43552a48,
-        type: 3}
-      propertyPath: m_Interactable
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 6254237382629347972, guid: 4085901397f7cfb41bd523ef43552a48,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3464,6 +3499,21 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 6254237382629347973, guid: 4085901397f7cfb41bd523ef43552a48,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6254237382629347973, guid: 4085901397f7cfb41bd523ef43552a48,
+        type: 3}
+      propertyPath: m_Interactable
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6254237382629347976, guid: 4085901397f7cfb41bd523ef43552a48,
+        type: 3}
+      propertyPath: mentorTips.Array.size
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 6254237382629347976, guid: 4085901397f7cfb41bd523ef43552a48,
         type: 3}
       propertyPath: gameManager
@@ -3486,6 +3536,26 @@ PrefabInstance:
         Lindsay demonstrated a constant electric light at a public meeting in Dundee,
         Scotland. He stated that he could "read a book at a distance of one and a
         half feet". However he did not develop the electric light any further
+      objectReference: {fileID: 0}
+    - target: {fileID: 6254237382629347976, guid: 4085901397f7cfb41bd523ef43552a48,
+        type: 3}
+      propertyPath: SceneIndex
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6254237382629347976, guid: 4085901397f7cfb41bd523ef43552a48,
+        type: 3}
+      propertyPath: mentorTips.Array.data[0]
+      value: Try a different year
+      objectReference: {fileID: 0}
+    - target: {fileID: 6254237382629347976, guid: 4085901397f7cfb41bd523ef43552a48,
+        type: 3}
+      propertyPath: mentorTips.Array.data[1]
+      value: hmmm
+      objectReference: {fileID: 0}
+    - target: {fileID: 6254237382629347976, guid: 4085901397f7cfb41bd523ef43552a48,
+        type: 3}
+      propertyPath: mentorTips.Array.data[2]
+      value: no
       objectReference: {fileID: 0}
     - target: {fileID: 6254237382544746840, guid: 4085901397f7cfb41bd523ef43552a48,
         type: 3}

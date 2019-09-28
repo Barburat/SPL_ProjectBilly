@@ -14,6 +14,7 @@ public class GameManager : MonoBehaviour
     public Text MentorText;
     public InputField inputField;
 
+    public static string LastVisitedScene;
     public static bool telephoneAcquired = false;
     public static bool vaccineAcquired = false;
     public static bool steamMachineAcquired = false;
@@ -27,28 +28,55 @@ public class GameManager : MonoBehaviour
 
     void OnLevelWasLoaded()
     {
-        if(buttons != null)
+        Debug.Log(LastVisitedScene);
+
+        if(buttons != null && LastVisitedScene != null && SceneManager.GetActiveScene().name == "Main")
         {
-            if (telephoneAcquired == true)
+            if(LastVisitedScene == "TelephoneScene")
             {
-                buttons[0].GetComponent<Button>().interactable = false;
+                if (telephoneAcquired == true)
+                {
+                    buttons[0].GetComponent<Button>().interactable = false;
+                    MentorText.text = "Great job Timmy! Choose another invention";
+                }
+                else
+                {
+                    Debug.Log(ButtonScript.phoneAttempts);
+                    //changeTip(buttons[0]);
+                    //fult
+                    MentorText.text = buttons[0].GetComponent<ButtonScript>().mentorTips[ButtonScript.phoneAttempts - 1];
+                }
             }
-            if (vaccineAcquired == true)
+            if (LastVisitedScene == "VaccineScene")
             {
-                buttons[1].GetComponent<Button>().interactable = false;
+                if (vaccineAcquired == true)
+                {
+                    buttons[1].GetComponent<Button>().interactable = false;
+                }
             }
-            if (steamMachineAcquired == true)
+            if (LastVisitedScene == "SteamScene")
             {
-                buttons[2].GetComponent<Button>().interactable = false;
+                if (steamMachineAcquired == true)
+                {
+                    buttons[2].GetComponent<Button>().interactable = false;
+                }
             }
-            if (lightbulbAcquired == true)
+            if (LastVisitedScene == "LightbulbScene")
             {
-                buttons[3].GetComponent<Button>().interactable = false;
+                if (lightbulbAcquired == true)
+                {
+                    buttons[3].GetComponent<Button>().interactable = false;
+                }
             }
         }
         
     }
-
+    /* Metod för att skriva ut skit
+    private void changeTip(GameObject button)
+    {
+        
+    }
+    */
     public void AddInvention(string name)
     {
         inventions.Add(name);

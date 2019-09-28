@@ -25,16 +25,19 @@ public class InputManager : MonoBehaviour
 
     public void StartGame()
     {
+        GameManager.LastVisitedScene = SceneManager.GetActiveScene().name;
         SceneManager.LoadScene("Main");
     }
 
     public void MainMenu()
     {
+        GameManager.LastVisitedScene = SceneManager.GetActiveScene().name;
         SceneManager.LoadScene("mainMenu");
     }
 
     public void StartTutorial()
     {
+        GameManager.LastVisitedScene = SceneManager.GetActiveScene().name;
         SceneManager.LoadScene("Tutorial");
     }
 

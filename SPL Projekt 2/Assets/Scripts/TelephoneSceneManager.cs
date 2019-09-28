@@ -66,6 +66,8 @@ public class TelephoneSceneManager : MonoBehaviour
         InventorTalk.text = "Bah! Do you really think i would give away my precious to an uneducated scoundrel like yourself? Get out of my sight!";
         GoBackButton.SetActive(true);
         QuestionPanel.SetActive(false);
+        ButtonScript.phoneAttempts++;
+
     }
 
 
