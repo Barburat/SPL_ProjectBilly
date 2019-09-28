@@ -171,16 +171,42 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   messages:
-  - This is an image of Emil
-  - Not sure what this is lmao
-  - This is an Image of a telephone, EPIC!
-  - Kjell Gai
-  - Alex Gai
+  - 'Prof: Timmy wake up! Our time machine is working, but at great cost! It seems
+    I have managed to distort the timeline...  '
+  - 'Timmy: What do you mean? Distorted how?! '
+  - 'Prof: The timeline... it''s different. Some of the greatest inventions of our
+    millennia has been lost in the great vortex of time! We must act swiftly, or this
+    could be end of civilization as we know it! '
+  - 'Timmy: But professor! What can we do to fix it?'
+  - 'Prof: We must use time machine to go back and retrieve these inventions from
+    the past. If we get a hold of every single one, the timeline should return to
+    normal.'
+  - 'Prof: The problem is that only one of us can go back - and I must remain here
+    to oversee the machine. You will have to retrieve these inventions on your own. '
+  - 'Timmy: Jeez professor! I don''t know if I can do it! '
+  - 'Prof: You can, and you will! The fate of the universe depends on it. '
+  - 'Prof: Time is of the essence Timmy! You see these icons? They represent the time
+    you have left, until the timeline is distorted beyond repair.'
+  - 'Prof: You must recover all the inventions before they run out. Each time you
+    go travel, one will be lost, so you must make the most out of every attempt. '
+  - 'Prof: To go back in time, you select the invention you wish to retrieve by clicking
+    on it. '
+  - 'Prof: Once you''ve done that, you''ll have to enter the correct century on the
+    time machine, or it will not work. I will guide you as much as I can. '
+  - 'Prof: Once you have travelled back in time, you must find the inventor of said
+    invention.'
+  - 'Prof: They will probably be hesitant to give away their invention, so you might
+    have to answer a question to prove yourself worthy of looking after it. '
+  - 'Prof: There will be multiple answers to choose from and if you get it wrong,
+    you''ll have to return later to try again. Choose carefully... for your time is
+    limited! '
+  - "Prof: Timmy, are you ready to fix the timeline \u2013 and by doing so, saving
+    the world?"
   images:
   - {fileID: 2800000, guid: 998199f249643664db5a201c154e0175, type: 3}
   - {fileID: 2800000, guid: 0a12424334d63764c86968b6e4f97aed, type: 3}
   - {fileID: 2800000, guid: 7f0a341778aefa8478a061377cd1c321, type: 3}
-  indexHasImage: 0101010000
+  indexHasImage: 01010100000000000000000000000000
   btnForward: {fileID: 1176071083}
   btnBackwards: {fileID: 1234273679}
   imageHolder: {fileID: 826125793}
@@ -206,18 +232,18 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 53
+    m_FontSize: 18
     m_FontStyle: 1
     m_BestFit: 1
-    m_MinSize: 10
-    m_MaxSize: 145
+    m_MinSize: 12
+    m_MaxSize: 18
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: This is an image of Emil
+  m_Text: 
 --- !u!222 &147684114
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -296,7 +322,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Button
+  m_Text: Okay, I understand
 --- !u!222 &290416045
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -604,7 +630,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Button
+  m_Text: Can you go back?
 --- !u!222 &1023503114
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -650,7 +676,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 334, y: -162}
+  m_AnchoredPosition: {x: 300, y: -160}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1176071085
@@ -831,7 +857,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -352, y: -158}
+  m_AnchoredPosition: {x: -300, y: -160}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1234273681
@@ -950,8 +976,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -358, y: -39}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchoredPosition: {x: -315, y: 0}
+  m_SizeDelta: {x: 200, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1447408992
 MonoBehaviour:

@@ -43,7 +43,7 @@ public class TutorialManager : MonoBehaviour
 
     public void Forward()
     {
-        if (messageIndex < messages.Length-1)
+        if (messageIndex < messages.Length - 1)
         {
             messageIndex++;
             ChangeUI();
@@ -71,9 +71,6 @@ public class TutorialManager : MonoBehaviour
         textField.text = messages[messageIndex];
         if (indexHasImage[messageIndex])
             img.texture = images[messageIndex];
-
-        Debug.Log(messageIndex);
-
     }
 
 
