@@ -1685,11 +1685,11 @@ RectTransform:
   m_Father: {fileID: 648652721}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -241.4, y: 71.00001}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 0, y: -34}
   m_SizeDelta: {x: 273.5, y: 215}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_Pivot: {x: 0, y: 1}
 --- !u!114 &667007019
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3834,16 +3834,12 @@ PrefabInstance:
     - target: {fileID: 6254237382629347976, guid: 4085901397f7cfb41bd523ef43552a48,
         type: 3}
       propertyPath: InfoText
-      value: According to all known laws of aviation,     there is no way a bee should
-        be able to fly.     Its wings are too small to get its fat little body off
-        the ground.     The bee, of course, flies anyway     because bees don't care
-        what humans think is impossible.     Yellow, black. Yellow, black. Yellow,
-        black. Yellow, black.     Ooh, black and yellow! Let's shake it up a little.     Barry!
-        Breakfast is ready!     Ooming!     Hang on a second.     Hello?     - Barry?
-        - Adam?     - Oan you believe this is happening? - I can't. I'll pick you
-        up.     Looking sharp.     Use the stairs. Your father paid good money for
-        those.     Sorry. I'm excited.     Here's the graduate. We're very proud of
-        you, son.     A perfect report card, all B's.
+      value: "Vaccination. Mer specifikt vaccination mot smittkoppor. Smittkoppor
+        var en v\xE4ldigt smittsam sjukdom, som med hj\xE4lp av vaccinering, blev
+        utrotad. Smittkoppor var d\xF6dligt. Runt 20-30% av de som fick sjukdomen
+        dog. De som levde igenom sjukdomen blev immuna, vilket var en uppt\xE4ckt
+        som ledde till de f\xF6rsta vaccinationerna. L\xE4karen Edward Jenner var
+        den f\xF6rsta som hittade en metod f\xF6r att skapa vaccin mot sjukdomen."
       objectReference: {fileID: 0}
     - target: {fileID: 6254237382629347976, guid: 4085901397f7cfb41bd523ef43552a48,
         type: 3}
@@ -4261,11 +4257,11 @@ RectTransform:
   m_Father: {fileID: 648652721}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -334, y: -129}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 133.7, y: 185}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_Pivot: {x: 0, y: 0}
 --- !u!114 &1839095343
 MonoBehaviour:
   m_ObjectHideFlags: 0
