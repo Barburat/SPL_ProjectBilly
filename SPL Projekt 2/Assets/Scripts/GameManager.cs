@@ -24,18 +24,19 @@ public class GameManager : MonoBehaviour
 
     public Text UsesText;
     private int maximumUses = 20;
-    public static int Uses;
+    public static int Uses = 20;
 
     private ArrayList inventions = new ArrayList();
 
 
     private void Start()
     {
-        Uses = maximumUses;
+        
     }
 
     private void Update()
     {
+        Debug.Log(Uses);
         if (UsesText != null)
         {
             UsesText.text = "Uses: " + Uses + "/" + maximumUses;
@@ -112,8 +113,7 @@ public class GameManager : MonoBehaviour
     public void StartTimeMachine()
     {
 
-        int year = selectedButton.GetComponent<ButtonScript>().CorrectYear;
-        int input = int.Parse(inputField.text);
+
 
         if (selectedButton == null)
         {
@@ -123,29 +123,31 @@ public class GameManager : MonoBehaviour
         {
             MentorText.text = "You need to select the year Billy!";
         }
-        else if (selectedButton != null && year == (input - (input % 100))) 
+        else if (selectedButton != null && inputField.text != "")
         {
-            Debug.Log("Correct input");
-            Uses--;
-            SceneManager.LoadScene(selectedButton.GetComponent<ButtonScript>().SceneIndex);
-        }
+            int year = selectedButton.GetComponent<ButtonScript>().CorrectYear;
+            int input = int.Parse(inputField.text);
+        
+            if (selectedButton != null && year == (input - (input % 100)))
+            {
+                Debug.Log("Correct input");
+                Uses--;
+                SceneManager.LoadScene(selectedButton.GetComponent<ButtonScript>().SceneIndex);
+            }
 
-        /*
-        if(selectedButton.GetComponent<ButtonScript>().CorrectYear == year)
-        {
-            SceneManager.LoadScene(selectedButton.GetComponent<ButtonScript>().SceneIndex);
-        }
-        */
-        else if (int.Parse(inputField.text) == 0) // MOTHERLOAD
-        {
-            inputManager.GetComponent<InputManager>().StartTutorial();
-        }
+            /*
+            if(selectedButton.GetComponent<ButtonScript>().CorrectYear == year)
+            {
+                SceneManager.LoadScene(selectedButton.GetComponent<ButtonScript>().SceneIndex);
+            }
+            */
 
-        else if(int.Parse(inputField.text) != selectedButton.GetComponent<ButtonScript>().CorrectYear)
-        {
-            Uses--;
-            WrongYearPanel.SetActive(true);
-            wrongYearInput();
+            else if (input != selectedButton.GetComponent<ButtonScript>().CorrectYear)
+            {
+                Uses--;
+                WrongYearPanel.SetActive(true);
+                wrongYearInput();
+            }
         }
 
         inputField.text = "";
