@@ -13,14 +13,18 @@ public class TutorialManager : MonoBehaviour
 
     [SerializeField] private GameObject btnForward;
     [SerializeField] private GameObject btnBackwards;
+    [SerializeField] private GameObject btnMenu;
     [SerializeField] private GameObject imageHolder;
     [SerializeField] private GameObject TimmyHolder;
 
     private static int messageIndex = 0;
+    private string sceneToLoad;
+
     private Text textField;    
     private Button b1;
     private Text b1Txt;
     private Button b2;
+    private Button b3;
     
 
     RawImage img;
@@ -39,6 +43,9 @@ public class TutorialManager : MonoBehaviour
         b2 = btnBackwards.GetComponent<Button>();
         b2.onClick.AddListener(Backwards);
 
+        b3 = btnMenu.GetComponent<Button>();
+        b3.onClick.AddListener(Menu);
+
         img = imageHolder.GetComponent<RawImage>();
         ChangeUI();
 
@@ -50,8 +57,12 @@ public class TutorialManager : MonoBehaviour
         {
             messageIndex++;
             ChangeUI();
-        }else
+        }
+        else
+        {
+            sceneToLoad = "Main";
             ChangeScene();
+        }
     }
 
     public void Backwards()
@@ -62,6 +73,12 @@ public class TutorialManager : MonoBehaviour
             ChangeUI();
         }
 
+    }
+
+    public void Menu()
+    {
+        sceneToLoad = "mainMenu";
+        ChangeScene();
     }
 
     /*Se till att det alltid finns lika många element i indexHasImage som det finns messages or errors will fuck you in the ass*/
@@ -92,7 +109,8 @@ public class TutorialManager : MonoBehaviour
 
     void ChangeScene()
     {
-        SceneManager.LoadScene("Main");
+        SceneManager.LoadScene(sceneToLoad);
+        messageIndex = 0;
     }
 
 }
