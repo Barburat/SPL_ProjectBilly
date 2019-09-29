@@ -76,6 +76,10 @@ public class GameManager : MonoBehaviour
                 {
                     buttons[1].GetComponent<Button>().interactable = false;
                 }
+                else
+                {
+                    MentorText.text = buttons[1].GetComponent<ButtonScript>().mentorTips[ButtonScript.phoneAttempts - 1];
+                }
             }
             if (LastVisitedScene == "SteamScene")
             {
@@ -83,12 +87,20 @@ public class GameManager : MonoBehaviour
                 {
                     buttons[2].GetComponent<Button>().interactable = false;
                 }
+                else
+                {
+                    MentorText.text = buttons[2].GetComponent<ButtonScript>().mentorTips[ButtonScript.phoneAttempts - 1];
+                }
             }
             if (LastVisitedScene == "LightbulbScene")
             {
                 if (lightbulbAcquired == true)
                 {
                     buttons[3].GetComponent<Button>().interactable = false;
+                }
+                else
+                {
+                    MentorText.text = buttons[3].GetComponent<ButtonScript>().mentorTips[ButtonScript.phoneAttempts - 1];
                 }
             }
             Debug.Log(telephoneAcquired + " " + vaccineAcquired + " " + steamMachineAcquired + " " + lightbulbAcquired);

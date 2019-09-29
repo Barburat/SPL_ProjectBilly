@@ -708,6 +708,21 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1120822359}
+    - target: {fileID: 1083452264548809268, guid: 8a9f2db8151934f4eafc1fd07155e70b,
+        type: 3}
+      propertyPath: m_Text
+      value: "Vad anv\xE4ndes telefonen till?"
+      objectReference: {fileID: 0}
+    - target: {fileID: 1083452264782576858, guid: 8a9f2db8151934f4eafc1fd07155e70b,
+        type: 3}
+      propertyPath: m_Text
+      value: "Kommunikation \xF6ver l\xE5nga distanser"
+      objectReference: {fileID: 0}
+    - target: {fileID: 1083452265455591388, guid: 8a9f2db8151934f4eafc1fd07155e70b,
+        type: 3}
+      propertyPath: m_Text
+      value: "V\xE4ckarklocka"
+      objectReference: {fileID: 0}
     - target: {fileID: 4291956251942260678, guid: 8a9f2db8151934f4eafc1fd07155e70b,
         type: 3}
       propertyPath: m_IsActive
@@ -847,16 +862,41 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 3186809240085257009, guid: ef95d037baac2124f849b9813cf78e22,
+        type: 3}
+      propertyPath: m_Text
+      value: "Vem fick patent p\xE5 telefonen f\xF6rst?"
+      objectReference: {fileID: 0}
     - target: {fileID: 3701539089595473006, guid: ef95d037baac2124f849b9813cf78e22,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1120822359}
+    - target: {fileID: 3701539089595473006, guid: ef95d037baac2124f849b9813cf78e22,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: WrongAnswer
+      objectReference: {fileID: 0}
+    - target: {fileID: 6182412711764894743, guid: ef95d037baac2124f849b9813cf78e22,
+        type: 3}
+      propertyPath: m_Text
+      value: Antonio Meucci
+      objectReference: {fileID: 0}
+    - target: {fileID: 1831648520001968827, guid: ef95d037baac2124f849b9813cf78e22,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1120822359}
     - target: {fileID: 1831648520001968827, guid: ef95d037baac2124f849b9813cf78e22,
         type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 1120822359}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: RightAnswer
+      objectReference: {fileID: 0}
+    - target: {fileID: 7261784662087862515, guid: ef95d037baac2124f849b9813cf78e22,
+        type: 3}
+      propertyPath: m_Text
+      value: Du, Alexander Graham Bell
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ef95d037baac2124f849b9813cf78e22, type: 3}
 --- !u!1 &8418591452970868981 stripped
