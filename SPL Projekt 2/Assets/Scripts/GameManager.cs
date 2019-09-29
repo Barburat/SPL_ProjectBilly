@@ -36,7 +36,6 @@ public class GameManager : MonoBehaviour
 
     private void Update()
     {
-        Debug.Log(Uses);
         if (UsesText != null)
         {
             UsesText.text = "Uses: " + Uses + "/" + maximumUses;
@@ -112,9 +111,6 @@ public class GameManager : MonoBehaviour
 
     public void StartTimeMachine()
     {
-
-
-
         if (selectedButton == null)
         {
             MentorText.text = "You need to select an invention first Billy!";
