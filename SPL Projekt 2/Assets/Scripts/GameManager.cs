@@ -119,13 +119,15 @@ public class GameManager : MonoBehaviour
             WrongYearPanel.SetActive(true);
             wrongYearInput();
         }
+
+        inputField.text = "";
     }
 
     private void wrongYearInput()
     {
         if(selectedButton != null)
         {
-            MentorText.text = selectedButton.GetComponent<ButtonScript>().WrongYearTips[0];
+            MentorText.text = selectedButton.GetComponent<ButtonScript>().WrongYearTips[Random.Range(0, selectedButton.GetComponent<ButtonScript>().WrongYearTips.Length)];
         }
     }
 
