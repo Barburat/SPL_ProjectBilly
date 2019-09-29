@@ -454,6 +454,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   GoBackButton: {fileID: 2041385893}
   ContinueButton: {fileID: 1301702296}
+  QuestionButton: {fileID: 0}
   InventorTalk: {fileID: 278221372}
   QuestionPanel: {fileID: 1205710514}
   WrongFeedback: wrong
@@ -461,6 +462,8 @@ MonoBehaviour:
   Dialogue:
   - greetings
   - answer my question please
+  Questions:
+  - {fileID: 1205710514}
 --- !u!4 &1081243880
 Transform:
   m_ObjectHideFlags: 0
@@ -649,6 +652,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: Continue
+      objectReference: {fileID: 0}
+    - target: {fileID: 4291956251942260678, guid: 8a9f2db8151934f4eafc1fd07155e70b,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8a9f2db8151934f4eafc1fd07155e70b, type: 3}

@@ -677,6 +677,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   GoBackButton: {fileID: 1815098266}
   ContinueButton: {fileID: 1439272598}
+  QuestionButton: {fileID: 0}
   InventorTalk: {fileID: 1507246320}
   QuestionPanel: {fileID: 1872585892}
   WrongFeedback: that is wrong
@@ -685,6 +686,8 @@ MonoBehaviour:
   - hi
   - answer please
   - now
+  Questions:
+  - {fileID: 1872585892}
 --- !u!4 &1900140238
 Transform:
   m_ObjectHideFlags: 0

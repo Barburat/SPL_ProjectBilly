@@ -586,6 +586,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   GoBackButton: {fileID: 565768290}
   ContinueButton: {fileID: 565768289}
+  QuestionButton: {fileID: 0}
   InventorTalk: {fileID: 565768288}
   QuestionPanel: {fileID: 565768287}
   WrongFeedback: Bah! Do you really think i would give away my precious to an uneducated
@@ -593,6 +594,8 @@ MonoBehaviour:
   RightFeedback: You seem to know your shit. Here you go.
   Dialogue:
   - Hello.
+  Questions:
+  - {fileID: 565768287}
 --- !u!4 &1383699691
 Transform:
   m_ObjectHideFlags: 0
