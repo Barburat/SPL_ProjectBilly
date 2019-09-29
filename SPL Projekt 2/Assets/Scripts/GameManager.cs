@@ -117,6 +117,16 @@ public class GameManager : MonoBehaviour
         else if(int.Parse(inputField.text) != selectedButton.GetComponent<ButtonScript>().CorrectYear)
         {
             WrongYearPanel.SetActive(true);
+            wrongYearInput();
         }
     }
+
+    private void wrongYearInput()
+    {
+        if(selectedButton != null)
+        {
+            MentorText.text = selectedButton.GetComponent<ButtonScript>().WrongYearTips[0];
+        }
+    }
+
 }

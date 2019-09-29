@@ -10,6 +10,7 @@ public class ButtonScript : MonoBehaviour
     public int SceneIndex;
     public string InfoText;
     public string[] mentorTips;
+    public string[] WrongYearTips;
 
     public static int phoneAttempts;
     public static int vaccineAttempts;
