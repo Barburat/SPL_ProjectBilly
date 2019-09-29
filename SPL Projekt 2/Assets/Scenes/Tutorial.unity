@@ -381,7 +381,8 @@ MonoBehaviour:
   - 'Prof: Time is of the essence Timmy! You see these numbers? They represent the
     time you have left, until the timeline is distorted beyond repair.'
   - 'Prof: You must recover all the inventions before they run out. Each time you
-    travel, one will be lost, so you must make the most out of every attempt. '
+    travel, one will be lost, so you must make the most out of every attempt. You
+    can not let the number reach zero, or all hope will be lost.'
   - 'Prof: To go back in time, you select the invention you wish to retrieve by clicking
     on it. '
   - 'Prof: Once you''ve done that, you''ll have to enter the correct century on the
