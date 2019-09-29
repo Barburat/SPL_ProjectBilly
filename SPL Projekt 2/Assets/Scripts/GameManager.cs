@@ -15,6 +15,7 @@ public class GameManager : MonoBehaviour
     public InputField inputField;
     public GameObject WrongYearPanel;
     public GameObject VictoryScreen;
+    public GameObject DefeatScreen;
 
     public static string LastVisitedScene;
     public static bool telephoneAcquired;
@@ -23,8 +24,8 @@ public class GameManager : MonoBehaviour
     public static bool lightbulbAcquired;
 
     public Text UsesText;
-    private int maximumUses = 20;
-    public static int Uses = 20;
+    private int maximumUses = 5;
+    public static int Uses = 5;
 
     private ArrayList inventions = new ArrayList();
 
@@ -36,6 +37,10 @@ public class GameManager : MonoBehaviour
 
     private void Update()
     {
+        if(DefeatScreen != null && Uses <= 0)
+        {
+            DefeatScreen.SetActive(true);
+        }
         if (UsesText != null)
         {
             UsesText.text = "Uses: " + Uses + "/" + maximumUses;
@@ -62,6 +67,10 @@ public class GameManager : MonoBehaviour
                     buttons[0].GetComponent<Button>().interactable = false;
                     MentorText.text = "Great job Timmy! Choose another invention";
                 }
+                else if(Uses <= 0)
+                {
+                    DefeatScreen.SetActive(true);
+                }
                 else
                 {
                     Debug.Log(ButtonScript.phoneAttempts);
@@ -76,6 +85,10 @@ public class GameManager : MonoBehaviour
                 {
                     buttons[1].GetComponent<Button>().interactable = false;
                 }
+                else if (Uses <= 0)
+                {
+                    DefeatScreen.SetActive(true);
+                }
                 else
                 {
                     MentorText.text = buttons[1].GetComponent<ButtonScript>().mentorTips[ButtonScript.phoneAttempts - 1];
@@ -87,6 +100,10 @@ public class GameManager : MonoBehaviour
                 {
                     buttons[2].GetComponent<Button>().interactable = false;
                 }
+                else if (Uses <= 0)
+                {
+                    DefeatScreen.SetActive(true);
+                }
                 else
                 {
                     MentorText.text = buttons[2].GetComponent<ButtonScript>().mentorTips[ButtonScript.phoneAttempts - 1];
@@ -97,6 +114,10 @@ public class GameManager : MonoBehaviour
                 if (lightbulbAcquired == true)
                 {
                     buttons[3].GetComponent<Button>().interactable = false;
+                }
+                else if (Uses <= 0)
+                {
+                    DefeatScreen.SetActive(true);
                 }
                 else
                 {
@@ -217,6 +238,7 @@ public class GameManager : MonoBehaviour
         lightbulbAcquired = false;
 
         LastVisitedScene = null;
+        Uses = maximumUses;
 
         ButtonScript.phoneAttempts = 0;
         ButtonScript.vaccineAttempts = 0;
