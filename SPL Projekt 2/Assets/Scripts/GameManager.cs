@@ -111,16 +111,19 @@ public class GameManager : MonoBehaviour
 
     public void StartTimeMachine()
     {
-        if(selectedButton == null)
+
+        int year = selectedButton.GetComponent<ButtonScript>().CorrectYear;
+        int input = int.Parse(inputField.text);
+
+        if (selectedButton == null)
         {
             MentorText.text = "You need to select an invention first Billy!";
         }
-        else if(inputField.text == "")
+        else if (inputField.text == "")
         {
             MentorText.text = "You need to select the year Billy!";
         }
-
-        else if(selectedButton != null && selectedButton.GetComponent<ButtonScript>().CorrectYear == int.Parse(inputField.text))
+        else if (selectedButton != null && year == (input - (input % 100))) 
         {
             Debug.Log("Correct input");
             Uses--;

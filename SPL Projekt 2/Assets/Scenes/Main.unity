@@ -4759,6 +4759,11 @@ PrefabInstance:
       propertyPath: WrongYearTips.Array.data[2]
       value: idiot
       objectReference: {fileID: 0}
+    - target: {fileID: 6254237382629347976, guid: 4085901397f7cfb41bd523ef43552a48,
+        type: 3}
+      propertyPath: CorrectYear
+      value: 1500
+      objectReference: {fileID: 0}
     - target: {fileID: 6254237382544746840, guid: 4085901397f7cfb41bd523ef43552a48,
         type: 3}
       propertyPath: m_Text
