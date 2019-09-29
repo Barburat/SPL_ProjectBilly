@@ -17,10 +17,10 @@ public class GameManager : MonoBehaviour
     public GameObject VictoryScreen;
 
     public static string LastVisitedScene;
-    public static bool telephoneAcquired = false;
-    public static bool vaccineAcquired = false;
-    public static bool steamMachineAcquired = false;
-    public static bool lightbulbAcquired = false;
+    public static bool telephoneAcquired;
+    public static bool vaccineAcquired;
+    public static bool steamMachineAcquired;
+    public static bool lightbulbAcquired;
 
     public Text UsesText;
     private int maximumUses = 20;
@@ -53,6 +53,8 @@ public class GameManager : MonoBehaviour
 
         if(buttons != null && LastVisitedScene != null && SceneManager.GetActiveScene().name == "Main")
         {
+            deactivateInventions();
+
             if(LastVisitedScene == "TelephoneScene")
             {
                 if (telephoneAcquired == true)
@@ -89,6 +91,7 @@ public class GameManager : MonoBehaviour
                     buttons[3].GetComponent<Button>().interactable = false;
                 }
             }
+            Debug.Log(telephoneAcquired + " " + vaccineAcquired + " " + steamMachineAcquired + " " + lightbulbAcquired);
         }
         
     }
@@ -169,6 +172,26 @@ public class GameManager : MonoBehaviour
             case "LightbulbScene":
                 lightbulbAcquired = true;
                 break;
+        }
+    }
+    
+    private void deactivateInventions()
+    {
+        if(telephoneAcquired == true)
+        {
+            buttons[0].GetComponent<Button>().interactable = false;
+        }
+        if (vaccineAcquired == true)
+        {
+            buttons[1].GetComponent<Button>().interactable = false;
+        }
+        if (steamMachineAcquired == true)
+        {
+            buttons[2].GetComponent<Button>().interactable = false;
+        }
+        if (lightbulbAcquired == true)
+        {
+            buttons[3].GetComponent<Button>().interactable = false;
         }
     }
 
