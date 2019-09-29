@@ -42,6 +42,12 @@ public class InputManager : MonoBehaviour
         SceneManager.LoadScene("Tutorial");
     }
 
+    public void RestartGame()
+    {
+        gameManager.ResetVariables();
+        SceneManager.LoadScene("mainMenu");
+    }
+
 
     public void SubmitInput()
     {

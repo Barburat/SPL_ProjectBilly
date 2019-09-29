@@ -14,12 +14,13 @@ public class GameManager : MonoBehaviour
     public Text MentorText;
     public InputField inputField;
     public GameObject WrongYearPanel;
+    public GameObject VictoryScreen;
 
     public static string LastVisitedScene;
     public static bool telephoneAcquired = false;
-    public static bool vaccineAcquired = false;
-    public static bool steamMachineAcquired = false;
-    public static bool lightbulbAcquired = false;
+    public static bool vaccineAcquired = true;
+    public static bool steamMachineAcquired = true;
+    public static bool lightbulbAcquired = true;
 
     private ArrayList inventions = new ArrayList();
     
@@ -30,6 +31,10 @@ public class GameManager : MonoBehaviour
     void OnLevelWasLoaded()
     {
         Debug.Log(LastVisitedScene);
+        if(telephoneAcquired == true && vaccineAcquired == true && steamMachineAcquired == true && lightbulbAcquired == true)
+        {
+            VictoryScreen.SetActive(true);
+        }
 
         if(buttons != null && LastVisitedScene != null && SceneManager.GetActiveScene().name == "Main")
         {
@@ -130,5 +135,20 @@ public class GameManager : MonoBehaviour
             MentorText.text = selectedButton.GetComponent<ButtonScript>().WrongYearTips[Random.Range(0, selectedButton.GetComponent<ButtonScript>().WrongYearTips.Length)];
         }
     }
+
+    public void ResetVariables()
+    {
+        telephoneAcquired = false;
+        vaccineAcquired = false;
+        steamMachineAcquired = false;
+        lightbulbAcquired = false;
+
+        LastVisitedScene = null;
+
+        ButtonScript.phoneAttempts = 0;
+        ButtonScript.vaccineAttempts = 0;
+        ButtonScript.steamAttempts = 0;
+        ButtonScript.lightAttempts = 0;
+}
 
 }
