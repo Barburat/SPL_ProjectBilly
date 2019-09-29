@@ -190,7 +190,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Hello Billy. Choose an invention.
+  m_Text: "Ok Timmy, v\xE4lj en uppfinning s\xE5 kan jag ber\xE4tta vad jag vet om
+    den.\nKnappa sedan in \xE5rhundradet den uppfanns f\xF6r att m\xF6ta uppfinnaren!"
 --- !u!222 &38747190
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5135,7 +5136,7 @@ PrefabInstance:
     - target: {fileID: 6254237382629347976, guid: 4085901397f7cfb41bd523ef43552a48,
         type: 3}
       propertyPath: mentorTips.Array.size
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6254237382629347976, guid: 4085901397f7cfb41bd523ef43552a48,
         type: 3}
@@ -5167,7 +5168,8 @@ PrefabInstance:
     - target: {fileID: 6254237382629347976, guid: 4085901397f7cfb41bd523ef43552a48,
         type: 3}
       propertyPath: mentorTips.Array.data[0]
-      value: Try a different year
+      value: "Ville han inte ge dig telefonen? Hmm.. L\xE4s p\xE5 mer om den och f\xF6rs\xF6k
+        igen!"
       objectReference: {fileID: 0}
     - target: {fileID: 6254237382629347976, guid: 4085901397f7cfb41bd523ef43552a48,
         type: 3}

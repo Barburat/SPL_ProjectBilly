@@ -162,6 +162,7 @@ MonoBehaviour:
   inputField: {fileID: 0}
   WrongYearPanel: {fileID: 0}
   VictoryScreen: {fileID: 0}
+  DefeatScreen: {fileID: 0}
   UsesText: {fileID: 0}
 --- !u!4 &741729745
 Transform:
@@ -295,17 +296,17 @@ MonoBehaviour:
   QuestionButton: {fileID: 2075794687}
   InventorTalk: {fileID: 1721601864}
   QuestionPanel: {fileID: 742188788}
-  WrongFeedback: You got that wrong
-  RightFeedback: Good job
+  WrongFeedback: "D\xE4r har du fel. Jag vill inte ge dig min uppfinning om du inte
+    vet hur den fungerar. Adj\xF6."
+  RightFeedback: "Korrekt! Kan du svara r\xE4tt p\xE5 n\xE4sta fr\xE5ga ocks\xE5?"
   Dialogue:
-  - Hello you little shit. If you think I'll give you my state of the art telephone
-    then you can just fuck off.
-  - I'm serious, get out of my swamp dumbass.
-  - Ok... If you really want it then I will give it to you if you're not a complete
-    fucking idiot.
-  - 'I will let you borrow this extraordinary masterpiece, but only if you show that
-    your intentions are honest. If you truly care about his invention you should know
-    this... '
+  - "Goddag, jag heter Alexander Graham Bell, uppfinnaren av telefonen. Hur kan jag
+    st\xE5 till tj\xE4nst?"
+  - "Du kommer fr\xE5n framtiden s\xE4ger du? Du beh\xF6ver ta med dig min uppfinning
+    till din tid? Hmm... Min uppfinning m\xE5ste ha varit viktig i framtiden om du
+    beh\xF6ver den s\xE5 mycket."
+  - "Som du vill, jag kan ge dig en av mina telefoner om du kan svara r\xE4tt p\xE5
+    dessa fr\xE5gor."
   Questions:
   - {fileID: 742188788}
   - {fileID: 8418591452970868981}
@@ -708,10 +709,75 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1120822359}
+    - target: {fileID: 1083452265891096498, guid: 8a9f2db8151934f4eafc1fd07155e70b,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1083452265891096498, guid: 8a9f2db8151934f4eafc1fd07155e70b,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1083452265891096498, guid: 8a9f2db8151934f4eafc1fd07155e70b,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1083452265891096498, guid: 8a9f2db8151934f4eafc1fd07155e70b,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1083452265891096498, guid: 8a9f2db8151934f4eafc1fd07155e70b,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1083452265891096498, guid: 8a9f2db8151934f4eafc1fd07155e70b,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1083452264521736031, guid: 8a9f2db8151934f4eafc1fd07155e70b,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -27
+      objectReference: {fileID: 0}
+    - target: {fileID: 1083452264521736031, guid: 8a9f2db8151934f4eafc1fd07155e70b,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 1083452264521736031, guid: 8a9f2db8151934f4eafc1fd07155e70b,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 133.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1083452265891096499, guid: 8a9f2db8151934f4eafc1fd07155e70b,
+        type: 3}
+      propertyPath: m_Texture
+      value: 
+      objectReference: {fileID: 2800000, guid: 1582e1ae231a0bc44bdea993070a8c36, type: 3}
+    - target: {fileID: 1083452265891096499, guid: 8a9f2db8151934f4eafc1fd07155e70b,
+        type: 3}
+      propertyPath: m_UVRect.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1083452265891096499, guid: 8a9f2db8151934f4eafc1fd07155e70b,
+        type: 3}
+      propertyPath: m_UVRect.width
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1083452265891096499, guid: 8a9f2db8151934f4eafc1fd07155e70b,
+        type: 3}
+      propertyPath: m_UVRect.height
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1083452264548809268, guid: 8a9f2db8151934f4eafc1fd07155e70b,
         type: 3}
       propertyPath: m_Text
-      value: "Vad anv\xE4ndes telefonen till?"
+      value: "Vad anv\xE4nds telefonen till?"
       objectReference: {fileID: 0}
     - target: {fileID: 1083452264782576858, guid: 8a9f2db8151934f4eafc1fd07155e70b,
         type: 3}
@@ -722,6 +788,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Text
       value: "V\xE4ckarklocka"
+      objectReference: {fileID: 0}
+    - target: {fileID: 7021196309280674255, guid: 8a9f2db8151934f4eafc1fd07155e70b,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -476
       objectReference: {fileID: 0}
     - target: {fileID: 4291956251942260678, guid: 8a9f2db8151934f4eafc1fd07155e70b,
         type: 3}
@@ -815,7 +886,7 @@ PrefabInstance:
     - target: {fileID: 9077914939306190030, guid: ef95d037baac2124f849b9813cf78e22,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 564
+      value: 487
       objectReference: {fileID: 0}
     - target: {fileID: 9077914939306190030, guid: ef95d037baac2124f849b9813cf78e22,
         type: 3}
@@ -825,12 +896,12 @@ PrefabInstance:
     - target: {fileID: 9077914939306190030, guid: ef95d037baac2124f849b9813cf78e22,
         type: 3}
       propertyPath: m_SizeDelta.x
-      value: 350
+      value: 271.7
       objectReference: {fileID: 0}
     - target: {fileID: 9077914939306190030, guid: ef95d037baac2124f849b9813cf78e22,
         type: 3}
       propertyPath: m_SizeDelta.y
-      value: 580
+      value: 450.2
       objectReference: {fileID: 0}
     - target: {fileID: 9077914939306190030, guid: ef95d037baac2124f849b9813cf78e22,
         type: 3}
