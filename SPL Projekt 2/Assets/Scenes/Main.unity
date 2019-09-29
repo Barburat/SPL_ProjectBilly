@@ -2397,7 +2397,7 @@ MonoBehaviour:
   MentorText: {fileID: 38747189}
   inputField: {fileID: 742411439}
   WrongYearPanel: {fileID: 286852878}
-  VictoryScreen: {fileID: 0}
+  VictoryScreen: {fileID: 1163434930}
 --- !u!1 &1151781648
 GameObject:
   m_ObjectHideFlags: 0
