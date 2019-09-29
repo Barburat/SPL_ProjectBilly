@@ -4709,20 +4709,14 @@ PrefabInstance:
     - target: {fileID: 6254237382629347976, guid: 4085901397f7cfb41bd523ef43552a48,
         type: 3}
       propertyPath: InfoText
-      value: In 1761 Ebenezer Kinnersley demonstrated heating a wire to incandescence.[9]  In
-        1802, Humphry Davy used what he described as "a battery of immense size",[10]
-        consisting of 2,000 cells housed in the basement of the Royal Institution
-        of Great Britain,[11] to create an incandescent light by passing the current
-        through a thin strip of platinum, chosen because the metal had an extremely
-        high melting point. It was not bright enough nor did it last long enough to
-        be practical, but it was the precedent behind the efforts of scores of experimenters
-        over the next 75 years.[12]  Over the first three-quarters of the 19th century,
-        many experimenters worked with various combinations of platinum or iridium
-        wires, carbon rods, and evacuated or semi-evacuated enclosures. Many of these
-        devices were demonstrated and some were patented.[13]  In 1835, James Bowman
-        Lindsay demonstrated a constant electric light at a public meeting in Dundee,
-        Scotland. He stated that he could "read a book at a distance of one and a
-        half feet". However he did not develop the electric light any further
+      value: "Ah, telefonen! Denna uppfinning gjorde det m\xF6jligt f\xF6r folk att
+        kommunicera \xF6ver l\xE5nga distanser. Det \xE4r inte s\xE4kert vem som var
+        den f\xF6rsta som uppfann telefonen, men den amerikanska uppfinnaren Alexander
+        Graham Bell var den f\xF6rsta som fick patent p\xE5 telefonen. Det \xE4r han
+        du ska tr\xE4ffa! \xC5k tillbaka till \xE5rhundradet som Alexander uppfann
+        sin version av telefonen. Om du beh\xF6ver hj\xE4lp med n\xE4r detta var s\xE5
+        kan jag ge dig en ledtr\xE5d: det amerikanska inb\xF6rdeskriget intr\xE4ffade
+        under samma \xE5rhundrade."
       objectReference: {fileID: 0}
     - target: {fileID: 6254237382629347976, guid: 4085901397f7cfb41bd523ef43552a48,
         type: 3}
