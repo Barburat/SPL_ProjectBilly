@@ -11,6 +11,8 @@ public class TelephoneSceneManager : MonoBehaviour
     public GameObject ContinueButton;
     public Text InventorTalk;
     public GameObject QuestionPanel;
+    public string WrongFeedback;
+    public string RightFeedback;
     public string[] Dialogue;
     private int currentDialogue;
     private GameManager gameManager;
@@ -53,9 +55,10 @@ public class TelephoneSceneManager : MonoBehaviour
     public void RightAnswer()
     {
         // print last comment from inventor, add button to go home. 
-        InventorTalk.text = "You seem to know your shit. Here you go. ";
-        gameManager.AddInvention("Telephone");
-        GameManager.telephoneAcquired = true;
+        InventorTalk.text = RightFeedback;
+        //gameManager.AddInvention("Telephone");
+        //GameManager.telephoneAcquired = true;
+        gameManager.InventionAcquired(SceneManager.GetActiveScene().name);
         GoBackButton.SetActive(true);
         QuestionPanel.SetActive(false);
 
@@ -63,10 +66,10 @@ public class TelephoneSceneManager : MonoBehaviour
 
     public void WrongAnswer()
     {
-        InventorTalk.text = "Bah! Do you really think i would give away my precious to an uneducated scoundrel like yourself? Get out of my sight!";
+        InventorTalk.text = WrongFeedback;
         GoBackButton.SetActive(true);
         QuestionPanel.SetActive(false);
-        ButtonScript.phoneAttempts++;
+        ButtonScript.AddAttempt(SceneManager.GetActiveScene().name);
 
     }
 

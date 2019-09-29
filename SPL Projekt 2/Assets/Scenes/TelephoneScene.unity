@@ -288,6 +288,8 @@ MonoBehaviour:
   ContinueButton: {fileID: 842906421}
   InventorTalk: {fileID: 1721601864}
   QuestionPanel: {fileID: 742188788}
+  WrongFeedback: You got that wrong
+  RightFeedback: Good job
   Dialogue:
   - Hello you little shit. If you think I'll give you my state of the art telephone
     then you can just fuck off.

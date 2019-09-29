@@ -153,6 +153,26 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    public void InventionAcquired(string name)
+    {
+        switch (name)
+        {
+            case "TelephoneScene":
+                telephoneAcquired = true;
+                break;
+            case "VaccineScene":
+                vaccineAcquired = true;
+                break;
+            case "SteamScene":
+                steamMachineAcquired = true;
+                break;
+            case "LightbulbScene":
+                lightbulbAcquired = true;
+                break;
+        }
+    }
+
+
     public void ResetVariables()
     {
         telephoneAcquired = false;

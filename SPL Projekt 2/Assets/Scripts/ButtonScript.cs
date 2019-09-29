@@ -30,4 +30,23 @@ public class ButtonScript : MonoBehaviour
         Debug.Log("Year: " + CorrectYear + " Scene Index: " + SceneIndex);
         gameManager.MentorText.text = InfoText;
     }
+
+    public static void AddAttempt(string name)
+    {
+        switch (name)
+        {
+            case "TelephoneScene":
+                phoneAttempts++;
+                break;
+            case "VaccineScene":
+                vaccineAttempts++;
+                break;
+            case "SteamScene":
+                steamAttempts++;
+                break;
+            case "LightbulbScene":
+                lightAttempts++;
+                break;
+        }
+    }
 }
