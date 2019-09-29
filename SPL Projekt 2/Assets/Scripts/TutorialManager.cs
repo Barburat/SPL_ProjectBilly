@@ -8,8 +8,8 @@ using System.Linq;
 public class TutorialManager : MonoBehaviour
 {
     [SerializeField] private string[] messages = new string[] { "Hello Hello", "Ree", "Hello again" };
-    [SerializeField] private Texture[] images;
     [SerializeField] private int[] IncludeTimmyAt;
+    [SerializeField] private GameObject[] images;
 
     [SerializeField] private GameObject btnForward;
     [SerializeField] private GameObject btnBackwards;
@@ -27,7 +27,7 @@ public class TutorialManager : MonoBehaviour
     private Button b3;
     
 
-    RawImage img;
+    //RawImage img;
 
     // Start is called before the first frame update
     void Start()
@@ -46,13 +46,13 @@ public class TutorialManager : MonoBehaviour
         b3 = btnMenu.GetComponent<Button>();
         b3.onClick.AddListener(Menu);
 
-        img = imageHolder.GetComponent<RawImage>();
         ChangeUI();
 
     }
 
     public void Forward()
     {
+            removeImage();
         if (messageIndex < messages.Length - 1)
         {
             messageIndex++;
@@ -67,6 +67,7 @@ public class TutorialManager : MonoBehaviour
 
     public void Backwards()
     {
+            removeImage();
         if (messageIndex > 0)
         {
             messageIndex--;
@@ -77,6 +78,7 @@ public class TutorialManager : MonoBehaviour
 
     public void Menu()
     {
+        removeImage();
         sceneToLoad = "mainMenu";
         ChangeScene();
     }
@@ -97,20 +99,23 @@ public class TutorialManager : MonoBehaviour
         else
             b1Txt.text = "Okay, I understand";
 
-
-        if (images[messageIndex] != null)
+        if(images[messageIndex] != null)
         {
-            imageHolder.SetActive(true);
-            img.texture = images[messageIndex];
+            images[messageIndex].SetActive(true);
         }
-        else
-            imageHolder.SetActive(false);
+ 
     }
 
     void ChangeScene()
     {
         SceneManager.LoadScene(sceneToLoad);
         messageIndex = 0;
+    }
+
+    void removeImage()
+    {
+        if(images[messageIndex] != null)
+            images[messageIndex].SetActive(false);
     }
 
 }
