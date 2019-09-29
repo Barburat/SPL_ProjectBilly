@@ -18,18 +18,33 @@ public class GameManager : MonoBehaviour
 
     public static string LastVisitedScene;
     public static bool telephoneAcquired = false;
-    public static bool vaccineAcquired = true;
-    public static bool steamMachineAcquired = true;
-    public static bool lightbulbAcquired = true;
+    public static bool vaccineAcquired = false;
+    public static bool steamMachineAcquired = false;
+    public static bool lightbulbAcquired = false;
+
+    public Text UsesText;
+    private int maximumUses = 20;
+    public static int Uses;
 
     private ArrayList inventions = new ArrayList();
-    
 
 
+    private void Start()
+    {
+        Uses = maximumUses;
+    }
 
+    private void Update()
+    {
+        if (UsesText != null)
+        {
+            UsesText.text = "Uses: " + Uses + "/" + maximumUses;
+        }
+    }
 
     void OnLevelWasLoaded()
     {
+        
         Debug.Log(LastVisitedScene);
         if(telephoneAcquired == true && vaccineAcquired == true && steamMachineAcquired == true && lightbulbAcquired == true)
         {
@@ -105,6 +120,7 @@ public class GameManager : MonoBehaviour
         else if(selectedButton != null && selectedButton.GetComponent<ButtonScript>().CorrectYear == int.Parse(inputField.text))
         {
             Debug.Log("Correct input");
+            Uses--;
             SceneManager.LoadScene(selectedButton.GetComponent<ButtonScript>().SceneIndex);
         }
 
@@ -121,6 +137,7 @@ public class GameManager : MonoBehaviour
 
         else if(int.Parse(inputField.text) != selectedButton.GetComponent<ButtonScript>().CorrectYear)
         {
+            Uses--;
             WrongYearPanel.SetActive(true);
             wrongYearInput();
         }
