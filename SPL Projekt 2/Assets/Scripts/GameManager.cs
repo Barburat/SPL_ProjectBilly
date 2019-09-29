@@ -13,6 +13,7 @@ public class GameManager : MonoBehaviour
     public GameObject selectedButton;
     public Text MentorText;
     public InputField inputField;
+    public GameObject WrongYearPanel;
 
     public static string LastVisitedScene;
     public static bool telephoneAcquired = false;
@@ -111,6 +112,11 @@ public class GameManager : MonoBehaviour
         else if (int.Parse(inputField.text) == 0) // MOTHERLOAD
         {
             inputManager.GetComponent<InputManager>().StartTutorial();
+        }
+
+        else if(int.Parse(inputField.text) != selectedButton.GetComponent<ButtonScript>().CorrectYear)
+        {
+            WrongYearPanel.SetActive(true);
         }
     }
 }

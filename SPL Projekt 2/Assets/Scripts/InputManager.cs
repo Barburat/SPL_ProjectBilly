@@ -10,6 +10,7 @@ public class InputManager : MonoBehaviour
 {
     public GameObject BookPanel;
     public GameManager gameManager;
+    public GameObject WrongYearPanel;
 
     // Start is called before the first frame update
     void Start()
@@ -58,6 +59,9 @@ public class InputManager : MonoBehaviour
         BookPanel.SetActive(false);
     }
 
-
+    public void WrongYear()
+    {
+        WrongYearPanel.SetActive(false);
+    }
 
 }
