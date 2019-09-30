@@ -24,8 +24,8 @@ public class GameManager : MonoBehaviour
     public static bool lightbulbAcquired;
 
     public Text UsesText;
-    private int maximumUses = 5;
-    public static int Uses = 5;
+    private int maximumUses = 10;
+    public static int Uses = 10;
 
     private ArrayList inventions = new ArrayList();
 
@@ -43,7 +43,7 @@ public class GameManager : MonoBehaviour
         }
         if (UsesText != null)
         {
-            UsesText.text = "Uses: " + Uses + "/" + maximumUses;
+            UsesText.text = "Användningar: " + Uses + "/" + maximumUses;
         }
     }
 
@@ -65,7 +65,7 @@ public class GameManager : MonoBehaviour
                 if (telephoneAcquired == true)
                 {
                     buttons[0].GetComponent<Button>().interactable = false;
-                    MentorText.text = "Great job Timmy! Choose another invention";
+                    MentorText.text = "Bra jobbat Timmy! Välj en ny uppfinning";
                 }
                 else if(Uses <= 0)
                 {
@@ -146,11 +146,11 @@ public class GameManager : MonoBehaviour
     {
         if (selectedButton == null)
         {
-            MentorText.text = "You need to select an invention first Billy!";
+            MentorText.text = "Du måste välja en uppfinning först Timmy!";
         }
         else if (inputField.text == "")
         {
-            MentorText.text = "You need to select the year Billy!";
+            MentorText.text = "Du måste ange vilket århundrade du ska åka till i kontrollpanelen först!";
         }
         else if (selectedButton != null && inputField.text != "")
         {

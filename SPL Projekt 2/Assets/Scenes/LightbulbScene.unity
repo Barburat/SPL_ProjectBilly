@@ -283,7 +283,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 174, y: -54}
+  m_AnchoredPosition: {x: -12, y: -54}
   m_SizeDelta: {x: 253.7, y: 343.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &234020200
@@ -647,6 +647,16 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1083452264909565030, guid: 8a9f2db8151934f4eafc1fd07155e70b,
+        type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 1083452264909565030, guid: 8a9f2db8151934f4eafc1fd07155e70b,
+        type: 3}
+      propertyPath: m_FontData.m_MinSize
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1083452265814527424, guid: 8a9f2db8151934f4eafc1fd07155e70b,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -732,6 +742,51 @@ PrefabInstance:
       propertyPath: m_UVRect.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1083452264548809268, guid: 8a9f2db8151934f4eafc1fd07155e70b,
+        type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 22
+      objectReference: {fileID: 0}
+    - target: {fileID: 1083452264548809268, guid: 8a9f2db8151934f4eafc1fd07155e70b,
+        type: 3}
+      propertyPath: m_FontData.m_MinSize
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1083452264548809268, guid: 8a9f2db8151934f4eafc1fd07155e70b,
+        type: 3}
+      propertyPath: m_Text
+      value: "Vilket filiment fungerar b\xE4st i en gl\xF6dlampa?"
+      objectReference: {fileID: 0}
+    - target: {fileID: 1083452264782576858, guid: 8a9f2db8151934f4eafc1fd07155e70b,
+        type: 3}
+      propertyPath: m_Text
+      value: Bambufibrer
+      objectReference: {fileID: 0}
+    - target: {fileID: 1083452265455591388, guid: 8a9f2db8151934f4eafc1fd07155e70b,
+        type: 3}
+      propertyPath: m_Text
+      value: "Bomullstr\xE5d"
+      objectReference: {fileID: 0}
+    - target: {fileID: 1083452266161604059, guid: 8a9f2db8151934f4eafc1fd07155e70b,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 240
+      objectReference: {fileID: 0}
+    - target: {fileID: 1083452266161604059, guid: 8a9f2db8151934f4eafc1fd07155e70b,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1083452265853440765, guid: 8a9f2db8151934f4eafc1fd07155e70b,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 300
+      objectReference: {fileID: 0}
+    - target: {fileID: 1083452266161604056, guid: 8a9f2db8151934f4eafc1fd07155e70b,
+        type: 3}
+      propertyPath: m_Color.a
+      value: 0.627451
+      objectReference: {fileID: 0}
     - target: {fileID: 1083452264521736028, guid: 8a9f2db8151934f4eafc1fd07155e70b,
         type: 3}
       propertyPath: m_Texture
@@ -809,12 +864,15 @@ MonoBehaviour:
   QuestionButton: {fileID: 0}
   InventorTalk: {fileID: 1507246320}
   QuestionPanel: {fileID: 1872585892}
-  WrongFeedback: that is wrong
-  RightFeedback: very correct
+  WrongFeedback: "Bah! tr\xE5d? Ut ur mitt hus din lurendrejare"
+  RightFeedback: "Adj\xF6, och lycka till nu min son, universum r\xE4knar med dig!"
   Dialogue:
-  - hi
-  - answer please
-  - now
+  - "N\xE4men jag s\xE4ger d\xE5 det, vem i allsin dar \xE4r du? "
+  - "...Fr\xE5n framtiden? L\xE5na min uppfinning? Det var d\xE5 det fr\xE4ckaste,
+    inte g\xF6r jag v\xE4l det till vem som helst."
+  - "...Universums utpl\xE5ning? Men satan pojk, varf\xF6r sa du bara inte det. Svara
+    p\xE5 en enkel fr\xE5ga s\xE5 vet jag att du har vett nog att ta hand om mitt
+    verk."
   Questions:
   - {fileID: 1872585892}
 --- !u!4 &1900140238

@@ -152,10 +152,10 @@ RectTransform:
   m_Father: {fileID: 667007018}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 240, y: 290}
+  m_SizeDelta: {x: -20, y: -20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &38747189
 MonoBehaviour:
@@ -179,10 +179,10 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
+    m_FontSize: 12
     m_FontStyle: 2
     m_BestFit: 0
-    m_MinSize: 10
+    m_MinSize: 1
     m_MaxSize: 40
     m_Alignment: 0
     m_AlignByGeometry: 0
@@ -434,16 +434,42 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Entries:
-  - rzfse
-  - fdr4g<ed
-  - yh<zg
-  - r5sfnyt
-  - dr
+  - "Thomas Edison b\xF6rjade g\xF6ra m\xE5nga f\xF6rs\xF6k med olika lampkonstruktioner
+    1878, och p\xE5 h\xF6sten 1879 fick han fram en gl\xF6dlampa som h\xF6ll \xF6ver
+    13 timmar. S\xE5 sm\xE5ningom lyckades han f\xF6rb\xE4ttra livsl\xE4ngden till
+    1200 timmar och fick patent p\xE5 den konstruktionen 1880. "
+  - "James Watt (30 January 1736 (19 January 1736 OS) \u2013 25 August 1819) was a
+    Scottish inventor, mechanical engineer, and chemist who improved on Thomas Newcomen's
+    1712 Newcomen steam engine with his Watt steam engine in 1781, which was fundamental
+    to the changes brought by the Industrial Revolution in both his native Great Britain
+    and the rest of the world."
+  - "People have been using smallpox vaccine since Edward Jenner first tested his
+    idea that inoculation with matter from a cowpox sore would protect a person from
+    smallpox. Jenner\u2019s work eventually led to widespread production and commercialization
+    of smallpox vaccine.  Successful use of smallpox vaccine led to the gradual reduction
+    of smallpox cases. The last U.S. wild smallpox case occurred in 1949. After intensive
+    vaccination campaigns in the 1960s and 1970s, the last case of wild smallpox in
+    the world occurred in 1977."
+  - 'The earliest steam engines were the scientific novelties of Hero of Alexandria
+    in the 1st century CE, such as the aeolipile, but not until the 17th century were
+    attempts made to harness steam for practical purposes. In 1698 Thomas Savery patented
+    a pump with hand-operated valves to raise water from mines by suction produced
+    by condensing steam. In about 1712 another Englishman, Thomas Newcomen, developed
+    a more efficient steam engine with a piston separating the condensing steam from
+    the water. In 1765 James Watt greatly improved the Newcomen engine by adding a
+    separate condenser to avoid heating and cooling the cylinder with each stroke. '
+  - 'On 7 March 1876, the Scotsman Alexander Graham Bell was granted his patent for
+    the telephone, which meant - legally - it was his idea.  He actually made his
+    first experimental phone in Boston in America. He was fascinated with turning
+    electricity into sound and, by 1875, had come up with a simple receiver that could
+    do this. Once he was granted a patent for his telephone device, it developed quickly.
+    On 10 March 1876, he spoke his first words on his newly invented phone, which
+    were to his assistant saying: "Mister Watson, come here, I want to see you."'
   pics:
-  - {fileID: 2800000, guid: 0a12424334d63764c86968b6e4f97aed, type: 3}
-  - {fileID: 2800000, guid: 8905678d3298cef4ebbc95dea39466eb, type: 3}
-  - {fileID: 2800000, guid: e7edc6602eeb1a140bb7ba66445275c7, type: 3}
-  - {fileID: 2800000, guid: c6f5130d590ed2b4f995fa41570547f8, type: 3}
+  - {fileID: 2800000, guid: 33f89b2d65fa0114abb9ebac79919095, type: 3}
+  - {fileID: 2800000, guid: 9d34560a44214d0439aea78049cfe282, type: 3}
+  - {fileID: 2800000, guid: 13c449a5f8bf62245aeb0db87a74e023, type: 3}
+  - {fileID: 2800000, guid: d37a1e3c0f1d3404189f84184fbb9c9a, type: 3}
   - {fileID: 2800000, guid: 7f0a341778aefa8478a061377cd1c321, type: 3}
   textfield: {fileID: 271137399}
   imagefield: {fileID: 237006944}
@@ -627,8 +653,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 170, y: 50}
-  m_SizeDelta: {x: 250, y: 200}
+  m_AnchoredPosition: {x: 120, y: 40}
+  m_SizeDelta: {x: 200, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &237006944
 MonoBehaviour:
@@ -643,14 +669,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.60784316}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.81960785}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Texture: {fileID: 2800000, guid: 998199f249643664db5a201c154e0175, type: 3}
+  m_Texture: {fileID: 2800000, guid: 33f89b2d65fa0114abb9ebac79919095, type: 3}
   m_UVRect:
     serializedVersion: 2
     x: 0
@@ -771,8 +797,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -200, y: 0}
-  m_SizeDelta: {x: 300, y: 410}
+  m_AnchoredPosition: {x: -140, y: 0}
+  m_SizeDelta: {x: 240, y: 310}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &271137399
 MonoBehaviour:
@@ -787,7 +813,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 0.122641504, g: 0.118841276, b: 0.11512104, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -796,23 +822,21 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 20
+    m_FontSize: 15
     m_FontStyle: 2
     m_BestFit: 0
     m_MinSize: 0
-    m_MaxSize: 40
+    m_MaxSize: 300
     m_Alignment: 0
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "In the 1870s, Elisha Gray and Alexander Graham Bell independently designed
-    devices that could transmit speech electrically. Both men rushed their respective
-    designs for these prototype telephones to the patent office within hours of each
-    other. Bell patented his telephone first and later emerged the victor in a legal
-    dispute with Gray.\r\n\r\nToday, Bell's name is synonymous with the telephone,
-    while Gray is largely forgotten. But the story of who invented the telephone..."
+  m_Text: "Thomas Edison b\xF6rjade g\xF6ra m\xE5nga f\xF6rs\xF6k med olika lampkonstruktioner
+    1878, och p\xE5 h\xF6sten 1879 fick han fram en gl\xF6dlampa som h\xF6ll \xF6ver
+    13 timmar. S\xE5 sm\xE5ningom lyckades han f\xF6rb\xE4ttra livsl\xE4ngden till
+    1200 timmar och fick patent p\xE5 den konstruktionen 1880. "
 --- !u!222 &271137400
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -852,7 +876,7 @@ RectTransform:
   m_Children:
   - {fileID: 1606032701}
   m_Father: {fileID: 648652721}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -930,11 +954,11 @@ RectTransform:
   m_Father: {fileID: 371144947}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 410, y: -260}
-  m_SizeDelta: {x: 200, y: 40}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_AnchorMin: {x: 1, y: 0}
+  m_AnchorMax: {x: 1, y: 0}
+  m_AnchoredPosition: {x: -20, y: 20}
+  m_SizeDelta: {x: 150, y: 35}
+  m_Pivot: {x: 1, y: 0}
 --- !u!114 &305129901
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1004,7 +1028,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.5019608}
+  m_Color: {r: 0.4245283, g: 0.30364615, b: 0.22628158, a: 0.92156863}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -1136,8 +1160,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 150, y: 20}
-  m_SizeDelta: {x: 130, y: 30}
+  m_AnchoredPosition: {x: 100, y: 20}
+  m_SizeDelta: {x: 80, y: 30}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &330853710
 MonoBehaviour:
@@ -1208,7 +1232,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.5254902}
+  m_Color: {r: 0.8301887, g: 0.72180045, b: 0.5208259, a: 0.5254902}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -1268,7 +1292,7 @@ RectTransform:
   - {fileID: 1614511733}
   - {fileID: 237006943}
   m_Father: {fileID: 648652721}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -1382,7 +1406,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Well done Timmy!
+  m_Text: "Bra jobbat Timmy, du har r\xE4ddat universum!"
 --- !u!222 &396090988
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1425,11 +1449,11 @@ RectTransform:
   m_Father: {fileID: 659493686}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -90, y: 0}
-  m_SizeDelta: {x: 140, y: 30}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_AnchorMin: {x: 0, y: 0.5}
+  m_AnchorMax: {x: 0, y: 0.5}
+  m_AnchoredPosition: {x: 40, y: 0}
+  m_SizeDelta: {x: 100, y: 20}
+  m_Pivot: {x: 0, y: 0.5}
 --- !u!114 &422180588
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1588,7 +1612,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 18
+    m_FontSize: 14
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 1
@@ -1656,7 +1680,7 @@ MonoBehaviour:
   m_Script: {fileID: 1980459831, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
@@ -1706,11 +1730,11 @@ RectTransform:
   - {fileID: 1097333939}
   - {fileID: 1839095342}
   - {fileID: 667007018}
+  - {fileID: 1234515781}
   - {fileID: 371144947}
   - {fileID: 286852879}
   - {fileID: 1163434931}
   - {fileID: 2019846610}
-  - {fileID: 1234515781}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1757,7 +1781,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 40}
+  m_SizeDelta: {x: 0, y: 30}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &659493687
 MonoBehaviour:
@@ -1831,8 +1855,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 0, y: -40}
-  m_SizeDelta: {x: 280, y: 320}
+  m_AnchoredPosition: {x: 0, y: -30}
+  m_SizeDelta: {x: 230, y: 269.89}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &667007019
 MonoBehaviour:
@@ -2288,11 +2312,11 @@ RectTransform:
   m_Father: {fileID: 305129900}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 1, y: 0}
-  m_AnchorMax: {x: 1, y: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 200, y: 40}
-  m_Pivot: {x: 1, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &862245302
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2306,7 +2330,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.16037738, g: 0.16037738, b: 0.16037738, a: 1}
+  m_Color: {r: 1, g: 0.8851332, b: 0.5801887, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -2315,10 +2339,10 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 22
+    m_FontSize: 18
     m_FontStyle: 3
     m_BestFit: 0
-    m_MinSize: 2
+    m_MinSize: 1
     m_MaxSize: 40
     m_Alignment: 4
     m_AlignByGeometry: 0
@@ -2369,7 +2393,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -40, y: 0}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 1, y: 0.5}
 --- !u!114 &880847594
@@ -2405,7 +2429,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Uses: 10/10'
+  m_Text: "Anv\xE4ndningar: 10/10"
 --- !u!222 &880847595
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2531,7 +2555,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 8, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1076662987
@@ -2639,7 +2663,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Main Menu
+  m_Text: Huvudmeny
 --- !u!222 &1090391371
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2854,31 +2878,17 @@ PrefabInstance:
     - target: {fileID: 6254237382629347976, guid: 4085901397f7cfb41bd523ef43552a48,
         type: 3}
       propertyPath: CorrectYear
-      value: 1200
+      value: 1800
       objectReference: {fileID: 0}
     - target: {fileID: 6254237382629347976, guid: 4085901397f7cfb41bd523ef43552a48,
         type: 3}
       propertyPath: InfoText
-      value: What the fuck did you just fucking say about me, you little bitch? I'll
-        have you know I graduated top of my class in the Navy Seals, and I've been
-        involved in numerous secret raids on Al-Quaeda, and I have over 300 confirmed
-        kills. I am trained in gorilla warfare and I'm the top sniper in the entire
-        US armed forces. You are nothing to me but just another target. I will wipe
-        you the fuck out with precision the likes of which has never been seen before
-        on this Earth, mark my fucking words. You think you can get away with saying
-        that shit to me over the Internet? Think again, fucker. As we speak I am contacting
-        my secret network of spies across the USA and your IP is being traced right
-        now so you better prepare for the storm, maggot. The storm that wipes out
-        the pathetic little thing you call your life. You're fucking dead, kid. I
-        can be anywhere, anytime, and I can kill you in over seven hundred ways, and
-        that's just with my bare hands. Not only am I extensively trained in unarmed
-        combat, but I have access to the entire arsenal of the United States Marine
-        Corps and I will use it to its full extent to wipe your miserable ass off
-        the face of the continent, you little shit. If only you could have known what
-        unholy retribution your little "clever" comment was about to bring down upon
-        you, maybe you would have held your fucking tongue. But you couldn't, you
-        didn't, and now you're paying the price, you goddamn idiot. I will shit fury
-        all over you and you will drown in it. You're fucking dead, kiddo.
+      value: "Ah, gl\xF6dlampan! Det var den m\xF6rkr\xE4dde amerikanen Thomas Edison
+        som tillsammans med Joseph Swan f\xF6rst lyckades konstruera gl\xF6dlampor
+        1879. Med elbelysningen f\xF6r\xE4ndrades m\xE4nniskors livsstil. Pl\xF6tsligt
+        kunde man l\xE4sa och arbeta l\xE5ngt in p\xE5 kv\xE4llarna. Thomas Edisons
+        f\xF6rsta gl\xF6dlampa lyste i 40 timmar. Dagens gl\xF6dlampor klarar 1000
+        timmar."
       objectReference: {fileID: 0}
     - target: {fileID: 6254237382629347976, guid: 4085901397f7cfb41bd523ef43552a48,
         type: 3}
@@ -2888,12 +2898,12 @@ PrefabInstance:
     - target: {fileID: 6254237382629347976, guid: 4085901397f7cfb41bd523ef43552a48,
         type: 3}
       propertyPath: mentorTips.Array.data[0]
-      value: no
+      value: "L\xE4s p\xE5 mer och f\xF6rs\xF6k igen!"
       objectReference: {fileID: 0}
     - target: {fileID: 6254237382629347976, guid: 4085901397f7cfb41bd523ef43552a48,
         type: 3}
       propertyPath: WrongYearTips.Array.data[0]
-      value: nope
+      value: "Gl\xF6dlampan uppfanns samma \xE5r som Abraham Lincoln blev m\xF6rdad."
       objectReference: {fileID: 0}
     - target: {fileID: 6254237382544746840, guid: 4085901397f7cfb41bd523ef43552a48,
         type: 3}
@@ -3114,7 +3124,7 @@ RectTransform:
   - {fileID: 396090986}
   - {fileID: 1730040209}
   m_Father: {fileID: 648652721}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -3271,8 +3281,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 77.125, y: -20}
-  m_SizeDelta: {x: -54.25, y: -40}
+  m_AnchoredPosition: {x: 77.125, y: -15}
+  m_SizeDelta: {x: -54.3, y: -30.000025}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1214983077
 MonoBehaviour:
@@ -3341,12 +3351,12 @@ RectTransform:
   - {fileID: 742411438}
   - {fileID: 2092048402}
   m_Father: {fileID: 648652721}
-  m_RootOrder: 12
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 200, y: 190}
+  m_SizeDelta: {x: 160, y: 190}
   m_Pivot: {x: 1, y: 0.5}
 --- !u!114 &1234515782
 MonoBehaviour:
@@ -3455,7 +3465,7 @@ PrefabInstance:
     - target: {fileID: 6254237382629347972, guid: 4085901397f7cfb41bd523ef43552a48,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 75
+      value: 86.2
       objectReference: {fileID: 0}
     - target: {fileID: 6254237382629347972, guid: 4085901397f7cfb41bd523ef43552a48,
         type: 3}
@@ -3570,7 +3580,7 @@ PrefabInstance:
     - target: {fileID: 6254237382629347976, guid: 4085901397f7cfb41bd523ef43552a48,
         type: 3}
       propertyPath: mentorTips.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6254237382629347976, guid: 4085901397f7cfb41bd523ef43552a48,
         type: 3}
@@ -3585,21 +3595,20 @@ PrefabInstance:
     - target: {fileID: 6254237382629347976, guid: 4085901397f7cfb41bd523ef43552a48,
         type: 3}
       propertyPath: CorrectYear
-      value: 1300
+      value: 1700
       objectReference: {fileID: 0}
     - target: {fileID: 6254237382629347976, guid: 4085901397f7cfb41bd523ef43552a48,
         type: 3}
       propertyPath: InfoText
-      value: Somebody once told me the world is gonna roll me I ain't the sharpest
-        tool in the shed She was looking kind of dumb with her finger and her thumb
-        In the shape of an "L" on her forehead Well the years start coming and they
-        don't stop coming Fed to the rules and I hit the ground running Didn't make
-        sense not to live for fun Your brain gets smart but your head gets dumb So
-        much to do, so much to see So what's wrong with taking the back streets? You'll
-        never know if you don't go You'll never shine if you don't glow Hey now, you're
-        an all-star, get your game on, go play Hey now, you're a rock star, get the
-        show on, get paid And all that glitters is gold Only shooting stars break
-        the mold
+      value: "\xC5ngmaskinen var en v\xE4ldigt stor del av den industriella revolutionen
+        och anv\xE4ndes f\xF6r mer \xE4n bara fabriker. Under det tidiga 1800-talet
+        b\xF6rjade b\xE5tar drivas av \xE5ngmaskiner ist\xE4llet f\xF6r segel och
+        t\xE5g som drevs p\xE5 \xE5ngmaskiner skapades. \xC5ngmaskiner anv\xE4ndes
+        i stor utstr\xE4ckning hela v\xE4gen fram till det tidiga 1900-talet. Den
+        f\xF6rsta kommersiella \xE5ngmaskinen skapades av Thomas Newcomen. Dock var
+        det f\xF6rb\xE4ttringarna som James Watt gjorde som verkligen gjorde \xE5ngmaskinen
+        en stor del av den industriella revolutionen. \xC5k tillbaka i tiden och tr\xE4ffa
+        honom!"
       objectReference: {fileID: 0}
     - target: {fileID: 6254237382629347976, guid: 4085901397f7cfb41bd523ef43552a48,
         type: 3}
@@ -3609,12 +3618,19 @@ PrefabInstance:
     - target: {fileID: 6254237382629347976, guid: 4085901397f7cfb41bd523ef43552a48,
         type: 3}
       propertyPath: mentorTips.Array.data[0]
-      value: no
+      value: "Du kanske beh\xF6ver l\xE4sa p\xE5 mer om \xE5ngmaskinen innan du kan
+        f\xE5 den."
       objectReference: {fileID: 0}
     - target: {fileID: 6254237382629347976, guid: 4085901397f7cfb41bd523ef43552a48,
         type: 3}
       propertyPath: WrongYearTips.Array.data[0]
-      value: dumbass
+      value: "\xC5ngmaskinen uppfanns samma \xE5rhundrade som smittkoppsvaccinet skapades."
+      objectReference: {fileID: 0}
+    - target: {fileID: 6254237382629347976, guid: 4085901397f7cfb41bd523ef43552a48,
+        type: 3}
+      propertyPath: mentorTips.Array.data[1]
+      value: "Du kanske beh\xF6ver l\xE4sa p\xE5 mer om \xE5ngmaskinen innan du kan
+        f\xE5 den."
       objectReference: {fileID: 0}
     - target: {fileID: 6254237382544746840, guid: 4085901397f7cfb41bd523ef43552a48,
         type: 3}
@@ -3770,7 +3786,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Year:'
+  m_Text: 
 --- !u!222 &1539332135
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3889,8 +3905,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: -150, y: 20}
-  m_SizeDelta: {x: 130, y: 30}
+  m_AnchoredPosition: {x: -100, y: 20}
+  m_SizeDelta: {x: 80, y: 30}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &1614511734
 MonoBehaviour:
@@ -3961,7 +3977,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.56078434}
+  m_Color: {r: 0.83137256, g: 0.7254902, b: 0.52156866, a: 0.56078434}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -4061,12 +4077,12 @@ PrefabInstance:
     - target: {fileID: 6254237382629347972, guid: 4085901397f7cfb41bd523ef43552a48,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -50
+      value: -38
       objectReference: {fileID: 0}
     - target: {fileID: 6254237382629347972, guid: 4085901397f7cfb41bd523ef43552a48,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 10
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 6254237382629347972, guid: 4085901397f7cfb41bd523ef43552a48,
         type: 3}
@@ -4226,12 +4242,13 @@ PrefabInstance:
     - target: {fileID: 6254237382629347976, guid: 4085901397f7cfb41bd523ef43552a48,
         type: 3}
       propertyPath: mentorTips.Array.data[0]
-      value: no
+      value: "Gav han dig inte vaccinet? L\xE4s p\xE5 mer och f\xF6rs\xF6k igen!"
       objectReference: {fileID: 0}
     - target: {fileID: 6254237382629347976, guid: 4085901397f7cfb41bd523ef43552a48,
         type: 3}
       propertyPath: WrongYearTips.Array.data[0]
-      value: try again timmy
+      value: "\xC5rhundradet du vill ta dig till \xE4r samma \xE5rhundrade som den
+        industriella revolutionen inleds i Storbritannien."
       objectReference: {fileID: 0}
     - target: {fileID: 6254237382544746840, guid: 4085901397f7cfb41bd523ef43552a48,
         type: 3}
@@ -4519,7 +4536,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Book
+  m_Text: Bok
 --- !u!222 &1737848149
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4587,10 +4604,10 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 18
+    m_FontSize: 14
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 1
+    m_MinSize: 0
     m_MaxSize: 40
     m_Alignment: 4
     m_AlignByGeometry: 0
@@ -4642,7 +4659,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 133.7, y: 185}
+  m_SizeDelta: {x: 104.25, y: 144.3}
   m_Pivot: {x: 0, y: 0}
 --- !u!114 &1839095343
 MonoBehaviour:
@@ -4806,8 +4823,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 90, y: 0}
-  m_SizeDelta: {x: 140, y: 30}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1961499329
 MonoBehaviour:
@@ -4941,7 +4958,7 @@ RectTransform:
   - {fileID: 2061940142}
   - {fileID: 210557918}
   m_Father: {fileID: 648652721}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -5055,7 +5072,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Main menu
+  m_Text: Huvudmeny
 --- !u!222 &2039791763
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5101,7 +5118,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: -32}
-  m_SizeDelta: {x: 69.71, y: 22.9}
+  m_SizeDelta: {x: 50, y: 25}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2046447741
 MonoBehaviour:
@@ -5123,7 +5140,7 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_NormalColor: {r: 0.754717, g: 0.12459949, b: 0.12459949, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
@@ -5404,7 +5421,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 0.8301887, g: 0.8301887, b: 0.8301887, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -5413,10 +5430,10 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
-    m_FontStyle: 0
+    m_FontSize: 12
+    m_FontStyle: 1
     m_BestFit: 0
-    m_MinSize: 10
+    m_MinSize: 1
     m_MaxSize: 40
     m_Alignment: 4
     m_AlignByGeometry: 0
@@ -5424,7 +5441,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Travel
+  m_Text: Aktivera
 --- !u!222 &2089487274
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5468,7 +5485,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
   m_AnchoredPosition: {x: 0, y: -10}
-  m_SizeDelta: {x: 160, y: 70}
+  m_SizeDelta: {x: 150, y: 70}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &2092048403
 MonoBehaviour:
@@ -5492,20 +5509,18 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
+    m_FontSize: 13
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 1
     m_MaxSize: 40
-    m_Alignment: 0
+    m_Alignment: 1
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Time travel control panel
-
-    Enter destination era below'
+  m_Text: "Kontrollpanel\nSkriv in \xE5rhundradet som \xE4r din destination "
 --- !u!222 &2092048404
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5590,7 +5605,7 @@ PrefabInstance:
     - target: {fileID: 6254237382629347972, guid: 4085901397f7cfb41bd523ef43552a48,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -150
+      value: -159.4
       objectReference: {fileID: 0}
     - target: {fileID: 6254237382629347972, guid: 4085901397f7cfb41bd523ef43552a48,
         type: 3}
@@ -5695,7 +5710,7 @@ PrefabInstance:
     - target: {fileID: 6254237382629347973, guid: 4085901397f7cfb41bd523ef43552a48,
         type: 3}
       propertyPath: m_Colors.m_DisabledColor.a
-      value: 1
+      value: 0.35686275
       objectReference: {fileID: 0}
     - target: {fileID: 6254237382629347973, guid: 4085901397f7cfb41bd523ef43552a48,
         type: 3}

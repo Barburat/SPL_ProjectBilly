@@ -530,11 +530,13 @@ MonoBehaviour:
   QuestionButton: {fileID: 0}
   InventorTalk: {fileID: 278221372}
   QuestionPanel: {fileID: 1205710514}
-  WrongFeedback: wrong
-  RightFeedback: right
+  WrongFeedback: "Inkorrekt! L\xE4mna mitt hus."
+  RightFeedback: Korrekt!
   Dialogue:
-  - greetings
-  - answer my question please
+  - "V\xE4lkommen. Jag \xE4r James Watt, skaparen av Watt \xE5ngmaskinen. Vad vill
+    ni?"
+  - "S\xE5 du vill ha min \xE5ngmaskin? Ok, om du kan svara p\xE5 min fr\xE5ga kan
+    du f\xE5 den."
   Questions:
   - {fileID: 1205710514}
 --- !u!4 &1081243880
@@ -686,6 +688,16 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1083452264909565030, guid: 8a9f2db8151934f4eafc1fd07155e70b,
+        type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 1083452264909565030, guid: 8a9f2db8151934f4eafc1fd07155e70b,
+        type: 3}
+      propertyPath: m_FontData.m_MinSize
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4291956251942260678, guid: 8a9f2db8151934f4eafc1fd07155e70b,
         type: 3}
       propertyPath: m_IsActive
@@ -765,6 +777,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_UVRect.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1083452264548809268, guid: 8a9f2db8151934f4eafc1fd07155e70b,
+        type: 3}
+      propertyPath: m_Text
+      value: "Vem skapade den f\xF6rsta kommersiella \xE5ngmaskinen?"
+      objectReference: {fileID: 0}
+    - target: {fileID: 1083452264782576858, guid: 8a9f2db8151934f4eafc1fd07155e70b,
+        type: 3}
+      propertyPath: m_Text
+      value: Thomas Newcomen
+      objectReference: {fileID: 0}
+    - target: {fileID: 1083452265455591388, guid: 8a9f2db8151934f4eafc1fd07155e70b,
+        type: 3}
+      propertyPath: m_Text
+      value: James Watt
+      objectReference: {fileID: 0}
+    - target: {fileID: 1083452265853440765, guid: 8a9f2db8151934f4eafc1fd07155e70b,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 340
       objectReference: {fileID: 0}
     - target: {fileID: 1083452264521736028, guid: 8a9f2db8151934f4eafc1fd07155e70b,
         type: 3}

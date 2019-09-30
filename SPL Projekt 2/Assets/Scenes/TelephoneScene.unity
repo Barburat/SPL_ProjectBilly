@@ -761,6 +761,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Question1
       objectReference: {fileID: 0}
+    - target: {fileID: 1083452264909565030, guid: 8a9f2db8151934f4eafc1fd07155e70b,
+        type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 1083452264909565030, guid: 8a9f2db8151934f4eafc1fd07155e70b,
+        type: 3}
+      propertyPath: m_FontData.m_MinSize
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4291956251942260678, guid: 8a9f2db8151934f4eafc1fd07155e70b,
         type: 3}
       propertyPath: m_IsActive
@@ -874,7 +884,12 @@ PrefabInstance:
     - target: {fileID: 7021196309280674255, guid: 8a9f2db8151934f4eafc1fd07155e70b,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -476
+      value: 22
+      objectReference: {fileID: 0}
+    - target: {fileID: 7021196309280674255, guid: 8a9f2db8151934f4eafc1fd07155e70b,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 7539864402620034284, guid: 8a9f2db8151934f4eafc1fd07155e70b,
         type: 3}
