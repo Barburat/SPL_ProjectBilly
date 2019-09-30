@@ -148,15 +148,15 @@ RectTransform:
   m_GameObject: {fileID: 45770476}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.2597822, y: 1.2597822, z: 1.2597822}
   m_Children:
   - {fileID: 805879488}
   m_Father: {fileID: 2067421061}
-  m_RootOrder: 7
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -300, y: 154}
+  m_AnchoredPosition: {x: -603, y: 412}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &45770478
@@ -253,7 +253,7 @@ GameObject:
   - component: {fileID: 80173921}
   - component: {fileID: 80173920}
   m_Layer: 5
-  m_Name: Timmy/Grey
+  m_Name: Timmy_Invisible
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -266,16 +266,16 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 80173918}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 2067421061}
-  m_RootOrder: 9
+  m_Father: {fileID: 1127735433}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 226, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 217.1, y: 211.44}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &80173920
@@ -364,38 +364,48 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   messages:
-  - 'Prof: Timmy wake up! Our time machine is working, but at great cost! It seems
-    I have managed to distort the timeline...  '
-  - 'Timmy: What do you mean? Distorted how?! '
-  - 'Prof: The timeline... it''s different. Some of the greatest inventions of our
-    millennia has been lost in the great vortex of time! We must act swiftly, or this
-    could be end of civilization as we know it! '
-  - 'Timmy: But professor! What can we do to fix it?'
-  - 'Prof: We must use time machine to go back and retrieve these inventions from
-    the past. If we can bring back every single one, the timeline should return to
-    normal.'
-  - 'Prof: The problem is that only one of us can go back - and I must remain here
-    to oversee the machine. You will have to retrieve these inventions on your own. '
-  - 'Timmy: Jeez professor! I don''t know if I can do it! '
-  - 'Prof: You can, and you will! The fate of the universe depends on it. '
-  - 'Prof: Time is of the essence Timmy! You see these numbers? They represent the
-    time you have left, until the timeline is distorted beyond repair.'
-  - 'Prof: You must recover all the inventions before they run out. Each time you
-    travel, one will be lost, so you must make the most out of every attempt. You
-    can not let the number reach zero, or all hope will be lost.'
-  - 'Prof: To go back in time, you select the invention you wish to retrieve by clicking
-    on it. '
-  - 'Prof: Once you''ve done that, you''ll have to enter the correct century on the
-    time machine, or it will not work. I will guide you as much as I can. '
-  - 'Prof: Once you have travelled back in time, you must find the inventor of said
-    invention.'
-  - 'Prof: They will probably be hesitant to give away their invention, so you might
-    have to answer a question to prove yourself worthy of looking after it. '
-  - 'Prof: There will be multiple answers to choose from and if you get it wrong,
-    you''ll have to return later to try again. Choose carefully... for your time is
-    limited! '
-  - "Prof: Timmy, are you ready to fix the timeline \u2013 and by doing so, saving
-    the world?"
+  - "Professorn: Timmy, vakna! Tidsmaskin har b\xF6rjat att fungera, men till ett
+    stort pris. Det verkar som att jag r\xE5kat f\xF6rvr\xE4nga tidslinjen\u2026"
+  - "Timmy: Vad menar du? F\xF6rvr\xE4ngt hur?"
+  - "Professorn: Tidslinjen\u2026 den \xE4r annorlunda. N\xE5gra av v\xE5r tids fr\xE4msta
+    uppfinningar har f\xF6rsvunnit i tidens virvel! Det \xE4r som att de aldrig funnits!
+    Vi m\xE5ste agera snabbt, eller s\xE5 kan detta bli slutet av civilisationen som
+    vi k\xE4nner den. "
+  - "Timmy: Men professorn! Vad kan vi g\xF6ra f\xF6r att fixa det?"
+  - "Professorn: Vi m\xE5ste anv\xE4nda tidsmaskinen f\xF6r att g\xE5 tillbaka i tiden,
+    hitta dessa uppfinningar och ta med dem tillbaka. Om vi lyckas \xE5tervinna varenda
+    uppfinning, borde tidslinjen r\xE4tta till sig igen. "
+  - "Professorn: Problemet \xE4r att bara en av oss kan resa tillbaka \u2013 och jag
+    m\xE5ste stanna kvar h\xE4r f\xF6r att \xF6verse tidsmaskinen. Du m\xE5ste resa
+    tillbaka i tiden sj\xE4lv och r\xE4tta till saken! "
+  - "Timmy: \xC5h nej, jag vet inte om jag klarar av det! "
+  - "Professorn: Du kan g\xF6ra det Timmy! V\xE4rldens \xF6de h\xE4nger p\xE5 det. "
+  - "Professorn: Tiden \xE4r knapp Timmy! Ser du dessa siffror? De representerar tiden
+    du har kvar tills tidslinjen inte l\xE4ngre g\xE5r att reparera. "
+  - "Professorn: Du m\xE5ste samla in alla uppfinningar f\xF6re tiden tar slut. Varje
+    g\xE5ng du reser kommer en enhet g\xE5 f\xF6rlorad, s\xE5 g\xF6r det mesta av
+    varje resa. Om den n\xE5r noll kommer m\xE4nskligheten vika h\xE4dan \u2013 och
+    allt hopp kommer ha g\xE5tt f\xF6rlorat. "
+  - "Professorn: F\xF6r att resa i tiden m\xE5ste v\xE4lja den uppfinning du vill
+    \xE5terfinna. Du g\xF6r detta genom att klicka p\xE5 den. "
+  - "Professorn: N\xE4r du har gjort det, kr\xE4vs det att du fyller i r\xE4tt \xE5rhundrade
+    p\xE5 konsolen. Annars kommer maskinen ej att fungera som den ska. Jag kommer
+    givetvis f\xF6rs\xF6ka v\xE4gleda dig s\xE5 mycket jag kan. "
+  - "Professorn: Du kan ocks\xE5 ta en titt i min gamla historiebok som ligger h\xE4r
+    n\xE5gonstans. D\xE4r b\xF6r du ocks\xE5 finna mer information om uppfinningarna.
+    N\xE5got jag tror kan vara till stor hj\xE4lp! "
+  - "Professorn: N\xE4r du rest tillbaka i tiden, m\xE5ste du raskt finna uppfinnaren
+    f\xF6r sagd uppfinning."
+  - "Professorn: Uppfinnaren kommer antagligen vara tveksam till att ge dig uppfinningen.
+    Du kan d\xE4rf\xF6r bli tvungen att svara p\xE5 n\xE5gra fr\xE5gor, s\xE5 de vet
+    att du \xE4r v\xE4rdig att se \xF6ver den. "
+  - "Professorn: Du kommer ges flera alternativ, v\xE4lj med stor f\xF6rsiktighet.
+    Om du svarar fel p\xE5 deras fr\xE5gor kommer du bli tvungen att resa tillbaka
+    i tiden flera g\xE5nger. Detta vill du dock undvika d\xE5 du har v\xE4ldigt ont
+    om tid. "
+  - "Professorn: Timmy, \xE4r du redo att r\xE4tta till tidslinjen och d\xE4rmed r\xE4dda
+    v\xE4rlden? "
+  - 'Timmy: *Funderar*'
   IncludeTimmyAt: 010000000300000006000000
   images:
   - {fileID: 0}
@@ -409,11 +419,13 @@ MonoBehaviour:
   - {fileID: 341661608}
   - {fileID: 341661608}
   - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
   - {fileID: 1767035346}
-  - {fileID: 1767035346}
+  - {fileID: 844333814}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   btnForward: {fileID: 1176071083}
   btnBackwards: {fileID: 1234273679}
   btnMenu: {fileID: 45770476}
@@ -444,7 +456,7 @@ MonoBehaviour:
     m_FontSize: 18
     m_FontStyle: 2
     m_BestFit: 1
-    m_MinSize: 14
+    m_MinSize: 12
     m_MaxSize: 18
     m_Alignment: 4
     m_AlignByGeometry: 0
@@ -461,6 +473,44 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 147684110}
   m_CullTransparentMesh: 0
+--- !u!1 &187493278
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 187493279}
+  m_Layer: 5
+  m_Name: StuffGroup
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &187493279
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 187493278}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1.466, y: 1.466, z: 1.466}
+  m_Children:
+  - {fileID: 1898725345}
+  - {fileID: 1176071084}
+  - {fileID: 1234273680}
+  m_Father: {fileID: 2067421061}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0.000010251999, y: 76}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &234292236
 GameObject:
   m_ObjectHideFlags: 0
@@ -518,7 +568,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Texture: {fileID: 2800000, guid: 8905678d3298cef4ebbc95dea39466eb, type: 3}
+  m_Texture: {fileID: 2800000, guid: 6c2d7f489559d9944b45817a541e69e9, type: 3}
   m_UVRect:
     serializedVersion: 2
     x: 0
@@ -545,7 +595,7 @@ GameObject:
   - component: {fileID: 236384803}
   - component: {fileID: 236384802}
   m_Layer: 5
-  m_Name: Timmy
+  m_Name: Timmy_Visible
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -558,16 +608,16 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 236384800}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 2067421061}
-  m_RootOrder: 10
+  m_Father: {fileID: 1127735433}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 226, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 217.1, y: 211.44}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &236384802
@@ -675,7 +725,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Okay, I understand
+  m_Text: "Jag f\xF6rst\xE5r..."
 --- !u!222 &290416045
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -709,16 +759,16 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 341661608}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.59938157, y: 0.59938157, z: 0.59938157}
+  m_LocalScale: {x: 4.464542, y: 3.0526783, z: 3.0526783}
   m_Children: []
-  m_Father: {fileID: 2067421061}
-  m_RootOrder: 3
+  m_Father: {fileID: 797172694}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1, y: -106}
+  m_AnchoredPosition: {x: 0.000027656555, y: -93}
   m_SizeDelta: {x: 344, y: 137}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &341661610
@@ -741,7 +791,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Texture: {fileID: 2800000, guid: d404021e1dd4d9745b6ce529e7dc9cf5, type: 3}
+  m_Texture: {fileID: 2800000, guid: 4036ab4581dea6249804912c0fd86de2, type: 3}
   m_UVRect:
     serializedVersion: 2
     x: 0
@@ -755,6 +805,78 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 341661608}
+  m_CullTransparentMesh: 0
+--- !u!1 &627414748
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 627414749}
+  - component: {fileID: 627414751}
+  - component: {fileID: 627414750}
+  m_Layer: 5
+  m_Name: Click
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &627414749
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 627414748}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 797172694}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0.000027656555, y: -174}
+  m_SizeDelta: {x: 1006.9, y: 599.88}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &627414750
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 627414748}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -98529514, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.7607844, g: 0.7607844, b: 0.7607844, a: 1}
+  m_RaycastTarget: 0
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Texture: {fileID: 2800000, guid: e891350625f35df438cb6e7b90ce33cf, type: 3}
+  m_UVRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+--- !u!222 &627414751
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 627414748}
   m_CullTransparentMesh: 0
 --- !u!1 &675586665
 GameObject:
@@ -822,6 +944,46 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &797172693
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 797172694}
+  m_Layer: 5
+  m_Name: InfoGroup
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &797172694
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 797172693}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.27390283, y: 0.27390283, z: 0.27390283}
+  m_Children:
+  - {fileID: 826125794}
+  - {fileID: 341661609}
+  - {fileID: 1767035347}
+  - {fileID: 627414749}
+  - {fileID: 844333815}
+  m_Father: {fileID: 2067421061}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 1, y: -106}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &805879487
 GameObject:
   m_ObjectHideFlags: 0
@@ -892,7 +1054,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Menu
+  m_Text: Huvudmeny
 --- !u!222 &805879490
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -926,16 +1088,16 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 826125793}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.27390283, y: 0.27390283, z: 0.27390283}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 2067421061}
-  m_RootOrder: 2
+  m_Father: {fileID: 797172694}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1, y: -106}
+  m_AnchoredPosition: {x: 0.000027656555, y: -174}
   m_SizeDelta: {x: 606, y: 598.3}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &826125795
@@ -972,6 +1134,78 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 826125793}
+  m_CullTransparentMesh: 0
+--- !u!1 &844333814
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 844333815}
+  - component: {fileID: 844333817}
+  - component: {fileID: 844333816}
+  m_Layer: 5
+  m_Name: Book
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &844333815
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 844333814}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 797172694}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0.000027656555, y: -174}
+  m_SizeDelta: {x: 810.6, y: 598.3}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &844333816
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 844333814}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -98529514, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.7607844, g: 0.7607844, b: 0.7607844, a: 1}
+  m_RaycastTarget: 0
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Texture: {fileID: 2800000, guid: c4924ce3d33ade34680d90b6dbefc137, type: 3}
+  m_UVRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+--- !u!222 &844333817
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 844333814}
   m_CullTransparentMesh: 0
 --- !u!1 &882805576
 GameObject:
@@ -1134,7 +1368,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Can you go back?
+  m_Text: "Kan du g\xE5 tillbaka?"
 --- !u!222 &1023503114
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1143,6 +1377,43 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1023503111}
   m_CullTransparentMesh: 0
+--- !u!1 &1127735432
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1127735433}
+  m_Layer: 5
+  m_Name: Timmy
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1127735433
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1127735432}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1.7434, y: 1.7434, z: 1.7434}
+  m_Children:
+  - {fileID: 80173919}
+  - {fileID: 236384801}
+  m_Father: {fileID: 2067421061}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 609, y: -276}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1176071083
 GameObject:
   m_ObjectHideFlags: 0
@@ -1170,17 +1441,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1176071083}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 290416043}
-  m_Father: {fileID: 2067421061}
-  m_RootOrder: 5
+  m_Father: {fileID: 187493279}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 300, y: -160}
+  m_AnchoredPosition: {x: 300, y: -236}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1176071085
@@ -1351,17 +1622,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1234273679}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1023503112}
-  m_Father: {fileID: 2067421061}
-  m_RootOrder: 6
+  m_Father: {fileID: 187493279}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -300, y: -160}
+  m_AnchoredPosition: {x: -300, y: -236}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1234273681
@@ -1473,14 +1744,14 @@ RectTransform:
   m_GameObject: {fileID: 1447408990}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.5247, y: 1.5247, z: 1.5247}
   m_Children: []
   m_Father: {fileID: 2067421061}
-  m_RootOrder: 8
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -279, y: -21}
+  m_AnchoredPosition: {x: -706, y: -331}
   m_SizeDelta: {x: 129.3, y: 160.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1447408992
@@ -1626,16 +1897,16 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1767035346}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.43063003, y: 0.43063003, z: 0.43063003}
+  m_LocalScale: {x: 1.5722, y: 1.9436322, z: 1.5722}
   m_Children: []
-  m_Father: {fileID: 2067421061}
-  m_RootOrder: 4
+  m_Father: {fileID: 797172694}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1.9, y: -112.9}
+  m_AnchoredPosition: {x: 3.2858112, y: -234}
   m_SizeDelta: {x: 392.8, y: 359}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1767035348
@@ -1658,7 +1929,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Texture: {fileID: 2800000, guid: 0ccd726aa80545d499eca19593adfee0, type: 3}
+  m_Texture: {fileID: 2800000, guid: d98b973f05855a34f8661de7fdaeec75, type: 3}
   m_UVRect:
     serializedVersion: 2
     x: 0
@@ -1703,12 +1974,12 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 147684111}
-  m_Father: {fileID: 2067421061}
-  m_RootOrder: 1
+  m_Father: {fileID: 187493279}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 76}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 400, y: 189.7}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1898725346
@@ -1837,16 +2108,11 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 234292237}
-  - {fileID: 1898725345}
-  - {fileID: 826125794}
-  - {fileID: 341661609}
-  - {fileID: 1767035347}
-  - {fileID: 1176071084}
-  - {fileID: 1234273680}
+  - {fileID: 797172694}
+  - {fileID: 187493279}
   - {fileID: 45770477}
   - {fileID: 1447408991}
-  - {fileID: 80173919}
-  - {fileID: 236384801}
+  - {fileID: 1127735433}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

@@ -95,9 +95,9 @@ public class TutorialManager : MonoBehaviour
 
 
         if (messageIndex == messages.Length - 1)
-            b1Txt.text = "I'm ready Rick!";
+            b1Txt.text = "Okej, jag är redo!";
         else
-            b1Txt.text = "Okay, I understand";
+            b1Txt.text = "Jag förstår...";
 
         if(images[messageIndex] != null)
         {
