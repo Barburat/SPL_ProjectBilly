@@ -11,6 +11,7 @@ public class InputManager : MonoBehaviour
     public GameObject BookPanel;
     public GameManager gameManager;
     public GameObject WrongYearPanel;
+    public GameObject creditsPanel;
 
     // Start is called before the first frame update
     void Start()
@@ -68,6 +69,19 @@ public class InputManager : MonoBehaviour
     public void WrongYear()
     {
         WrongYearPanel.SetActive(false);
+    }
+
+    public void ToggleCredits()
+    {
+        if (creditsPanel.active == false)
+        {
+            creditsPanel.SetActive(true);
+        }
+        else
+        {
+            creditsPanel.SetActive(false);
+        }
+        
     }
 
 }
