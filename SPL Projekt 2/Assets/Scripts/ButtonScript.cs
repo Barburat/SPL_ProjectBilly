@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class ButtonScript : MonoBehaviour
 {
     public GameManager gameManager;
+    public SoundManager sound;
     public int CorrectYear;
     public int SceneIndex;
     public string InfoText;
@@ -29,6 +30,7 @@ public class ButtonScript : MonoBehaviour
         Debug.Log("Clicked " + gameObject.name);
         Debug.Log("Year: " + CorrectYear + " Scene Index: " + SceneIndex);
         gameManager.MentorText.text = InfoText;
+        playSoundEffect();
     }
 
     public static void AddAttempt(string name)
@@ -49,4 +51,26 @@ public class ButtonScript : MonoBehaviour
                 break;
         }
     }
+
+    private void playSoundEffect()
+    {
+        if (this.gameObject.name == "Invention1") // telefon
+        {
+            sound.playTelephone();
+        }
+        if (this.gameObject.name == "Invention2") // vaccin
+        {
+            sound.playVaccine();
+        }
+        if (this.gameObject.name == "Invention3") // steam
+        {
+            sound.playSteam();
+        }
+        if (this.gameObject.name == "Invention4") // lampa
+        {
+            sound.playlamp();
+        }
+
+    }
+
 }
