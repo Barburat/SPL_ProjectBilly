@@ -91,7 +91,7 @@ public class GameManager : MonoBehaviour
                 }
                 else
                 {
-                    MentorText.text = buttons[1].GetComponent<ButtonScript>().mentorTips[ButtonScript.phoneAttempts - 1];
+                    MentorText.text = buttons[1].GetComponent<ButtonScript>().mentorTips[ButtonScript.vaccineAttempts - 1];
                 }
             }
             if (LastVisitedScene == "SteamScene")
@@ -106,7 +106,7 @@ public class GameManager : MonoBehaviour
                 }
                 else
                 {
-                    MentorText.text = buttons[2].GetComponent<ButtonScript>().mentorTips[ButtonScript.phoneAttempts - 1];
+                    MentorText.text = buttons[2].GetComponent<ButtonScript>().mentorTips[ButtonScript.steamAttempts - 1];
                 }
             }
             if (LastVisitedScene == "LightbulbScene")
@@ -121,7 +121,7 @@ public class GameManager : MonoBehaviour
                 }
                 else
                 {
-                    MentorText.text = buttons[3].GetComponent<ButtonScript>().mentorTips[ButtonScript.phoneAttempts - 1];
+                    MentorText.text = buttons[3].GetComponent<ButtonScript>().mentorTips[ButtonScript.lightAttempts - 1];
                 }
             }
             Debug.Log(telephoneAcquired + " " + vaccineAcquired + " " + steamMachineAcquired + " " + lightbulbAcquired);
