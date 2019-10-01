@@ -517,6 +517,7 @@ MonoBehaviour:
   BookPanel: {fileID: 0}
   gameManager: {fileID: 0}
   WrongYearPanel: {fileID: 0}
+  creditsPanel: {fileID: 0}
 --- !u!4 &1465982185
 Transform:
   m_ObjectHideFlags: 0
@@ -749,6 +750,16 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1083452266161604058, guid: 8a9f2db8151934f4eafc1fd07155e70b,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1083452266161604058, guid: 8a9f2db8151934f4eafc1fd07155e70b,
+        type: 3}
+      propertyPath: m_Name
+      value: Question1
+      objectReference: {fileID: 0}
     - target: {fileID: 1083452264909565030, guid: 8a9f2db8151934f4eafc1fd07155e70b,
         type: 3}
       propertyPath: m_FontData.m_FontSize
@@ -758,6 +769,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_FontData.m_MinSize
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4291956251942260678, guid: 8a9f2db8151934f4eafc1fd07155e70b,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1083452265814527424, guid: 8a9f2db8151934f4eafc1fd07155e70b,
         type: 3}
@@ -837,7 +853,7 @@ PrefabInstance:
     - target: {fileID: 1083452264782576858, guid: 8a9f2db8151934f4eafc1fd07155e70b,
         type: 3}
       propertyPath: m_Text
-      value: musikalisk telegraf
+      value: Musikalisk telegraf
       objectReference: {fileID: 0}
     - target: {fileID: 1083452265455591388, guid: 8a9f2db8151934f4eafc1fd07155e70b,
         type: 3}
@@ -868,16 +884,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.x
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1083452266161604058, guid: 8a9f2db8151934f4eafc1fd07155e70b,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1083452266161604058, guid: 8a9f2db8151934f4eafc1fd07155e70b,
-        type: 3}
-      propertyPath: m_Name
-      value: Question1
       objectReference: {fileID: 0}
     - target: {fileID: 1083452265891096498, guid: 8a9f2db8151934f4eafc1fd07155e70b,
         type: 3}
@@ -918,11 +924,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 18
-      objectReference: {fileID: 0}
-    - target: {fileID: 4291956251942260678, guid: 8a9f2db8151934f4eafc1fd07155e70b,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7539864402620034284, guid: 8a9f2db8151934f4eafc1fd07155e70b,
         type: 3}
